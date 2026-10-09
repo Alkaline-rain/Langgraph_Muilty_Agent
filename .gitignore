@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+execution_trace.json
+runs/
+test_results/

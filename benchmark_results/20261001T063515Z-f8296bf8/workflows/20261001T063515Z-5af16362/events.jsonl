@@ -1,0 +1,8 @@
+{"timestamp": "2026-10-01T06:35:15.659+00:00", "kind": "workflow_start"}
+{"timestamp": "2026-10-01T06:35:15.674+00:00", "kind": "node_started", "node": "generate", "iteration": 0}
+{"timestamp": "2026-10-01T06:35:15.675+00:00", "kind": "node_finished", "node": "generate", "duration_ms": 0}
+{"timestamp": "2026-10-01T06:35:15.682+00:00", "kind": "node_completed", "node": "generate", "iteration": 1, "llm_calls": 1, "error_type": ""}
+{"timestamp": "2026-10-01T06:35:15.682+00:00", "kind": "node_started", "node": "execute", "iteration": 1}
+{"timestamp": "2026-10-01T06:35:15.693+00:00", "kind": "node_finished", "node": "execute", "duration_ms": 16}
+{"timestamp": "2026-10-01T06:35:15.693+00:00", "kind": "node_completed", "node": "execute", "iteration": 1, "llm_calls": 1, "error_type": ""}
+{"timestamp": "2026-10-01T06:35:15.710+00:00", "kind": "workflow_end", "status": "succeeded", "reason": "tests_passed"}

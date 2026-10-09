@@ -1,0 +1,20 @@
+{"timestamp": "2026-10-01T06:35:15.325+00:00", "kind": "workflow_start"}
+{"timestamp": "2026-10-01T06:35:15.342+00:00", "kind": "node_started", "node": "generate", "iteration": 0}
+{"timestamp": "2026-10-01T06:35:15.342+00:00", "kind": "node_finished", "node": "generate", "duration_ms": 0}
+{"timestamp": "2026-10-01T06:35:15.342+00:00", "kind": "node_completed", "node": "generate", "iteration": 1, "llm_calls": 1, "error_type": ""}
+{"timestamp": "2026-10-01T06:35:15.342+00:00", "kind": "node_started", "node": "execute", "iteration": 1}
+{"timestamp": "2026-10-01T06:35:15.359+00:00", "kind": "node_finished", "node": "execute", "duration_ms": 32}
+{"timestamp": "2026-10-01T06:35:15.363+00:00", "kind": "node_completed", "node": "execute", "iteration": 1, "llm_calls": 1, "error_type": "syntax_error"}
+{"timestamp": "2026-10-01T06:35:15.367+00:00", "kind": "node_started", "node": "review", "iteration": 1}
+{"timestamp": "2026-10-01T06:35:15.369+00:00", "kind": "node_finished", "node": "review", "duration_ms": 0}
+{"timestamp": "2026-10-01T06:35:15.370+00:00", "kind": "node_completed", "node": "review", "iteration": 1, "llm_calls": 2, "error_type": "syntax_error"}
+{"timestamp": "2026-10-01T06:35:15.374+00:00", "kind": "node_started", "node": "reflect", "iteration": 1}
+{"timestamp": "2026-10-01T06:35:15.377+00:00", "kind": "node_finished", "node": "reflect", "duration_ms": 15}
+{"timestamp": "2026-10-01T06:35:15.378+00:00", "kind": "node_completed", "node": "reflect", "iteration": 1, "llm_calls": 3, "error_type": "syntax_error"}
+{"timestamp": "2026-10-01T06:35:15.383+00:00", "kind": "node_started", "node": "generate", "iteration": 1}
+{"timestamp": "2026-10-01T06:35:15.385+00:00", "kind": "node_finished", "node": "generate", "duration_ms": 0}
+{"timestamp": "2026-10-01T06:35:15.386+00:00", "kind": "node_completed", "node": "generate", "iteration": 2, "llm_calls": 4, "error_type": "syntax_error"}
+{"timestamp": "2026-10-01T06:35:15.390+00:00", "kind": "node_started", "node": "execute", "iteration": 2}
+{"timestamp": "2026-10-01T06:35:15.391+00:00", "kind": "node_finished", "node": "execute", "duration_ms": 0}
+{"timestamp": "2026-10-01T06:35:15.391+00:00", "kind": "node_completed", "node": "execute", "iteration": 2, "llm_calls": 4, "error_type": ""}
+{"timestamp": "2026-10-01T06:35:15.391+00:00", "kind": "workflow_end", "status": "succeeded", "reason": "tests_passed"}

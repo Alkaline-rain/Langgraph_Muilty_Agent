@@ -1,0 +1,45 @@
+{
+  "run_id": "20261001T063515Z-f8296bf8",
+  "mode": "simulate",
+  "corpus_version": "1.0.0",
+  "corpus_sha256": "9630f93abf41d495b1f168a86978c03043a718e86a6ea73892bc5958d3c75631",
+  "source_sha256": "b3f37ccff8e36705bb413b5ba4893242000cd55faad7e7cb074c4b659c2aa7d1",
+  "model": "scripted-fixture",
+  "temperatures": {
+    "coder": 0.2,
+    "reviewer": 0.0,
+    "reflector": 0.4
+  },
+  "strategies": [
+    "single",
+    "direct",
+    "full",
+    "adaptive"
+  ],
+  "repeats": 1,
+  "order_seed": 42,
+  "planned_workflows": 8,
+  "upper_bound_call_attempts": 56,
+  "budget_profile": "attempts",
+  "max_attempts": 3,
+  "run_config": {
+    "strategy": "adaptive",
+    "max_calls": 9,
+    "max_total_tokens": 150000,
+    "max_output_tokens": 2048,
+    "prompt_chars": 20000,
+    "feedback_chars": 6000,
+    "history_window": 3,
+    "repeat_limit": 3
+  },
+  "task_ids": [
+    "add",
+    "multiply"
+  ],
+  "sandbox_image": "code-assistant-sandbox:offline-v1",
+  "packages": {
+    "langgraph": "1.2.12",
+    "langchain-core": "1.6.6",
+    "langchain-deepseek": "1.1.1"
+  }
+}

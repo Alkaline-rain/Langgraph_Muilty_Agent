@@ -1,0 +1,9 @@
+{
+  "question": "实现 solve(payload)，payload 是包含 a、b 的对象，返回两数之和。",
+  "execution_mode": "offline",
+  "cases": [
+    {"name": "positive", "input": {"a": 2, "b": 3}, "expected": 5},
+    {"name": "negative", "input": {"a": -5, "b": 2}, "expected": -3},
+    {"name": "zero", "input": {"a": 0, "b": 0}, "expected": 0}
+  ]
+}

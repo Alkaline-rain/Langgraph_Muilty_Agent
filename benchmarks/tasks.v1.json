@@ -1,0 +1,1098 @@
+{
+  "version": "1.0.0",
+  "description": "24 个固定离线任务，每题 2 个修复反馈用例和 1 个最终保留用例；不是外部标准基准。",
+  "tasks": [
+    {
+      "id": "add",
+      "category": "numeric",
+      "task": {
+        "question": "实现同步函数 solve(payload)。返回 payload.a 与 payload.b 之和。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "a": 2,
+              "b": 3
+            },
+            "expected": 5
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "a": -5,
+              "b": 2
+            },
+            "expected": -3
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "a": 0,
+            "b": 0
+          },
+          "expected": 0
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return payload['a'] + payload['b']\n"
+      }
+    },
+    {
+      "id": "multiply",
+      "category": "numeric",
+      "task": {
+        "question": "实现同步函数 solve(payload)。返回 payload.a 与 payload.b 的乘积。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "a": 3,
+              "b": 4
+            },
+            "expected": 12
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "a": -2,
+              "b": 5
+            },
+            "expected": -10
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "a": 0,
+            "b": 9
+          },
+          "expected": 0
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return payload['a'] * payload['b']\n"
+      }
+    },
+    {
+      "id": "abs_difference",
+      "category": "numeric",
+      "task": {
+        "question": "实现同步函数 solve(payload)。返回 payload.a 与 payload.b 差的绝对值。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "a": 2,
+              "b": 5
+            },
+            "expected": 3
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "a": 8,
+              "b": 3
+            },
+            "expected": 5
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "a": -4,
+            "b": -4
+          },
+          "expected": 0
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return abs(payload['a'] - payload['b'])\n"
+      }
+    },
+    {
+      "id": "clamp",
+      "category": "numeric",
+      "task": {
+        "question": "实现同步函数 solve(payload)。将 payload.value 限制在闭区间 [payload.low, payload.high]，保证 low<=high。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "value": 9,
+              "low": 0,
+              "high": 5
+            },
+            "expected": 5
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "value": -1,
+              "low": 0,
+              "high": 5
+            },
+            "expected": 0
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "value": 3,
+            "low": 0,
+            "high": 5
+          },
+          "expected": 3
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return min(payload['high'], max(payload['low'], payload['value']))\n"
+      }
+    },
+    {
+      "id": "factorial",
+      "category": "numeric",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是 0 到 12 的整数，返回阶乘。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": 5,
+            "expected": 120
+          },
+          {
+            "name": "case_2",
+            "input": 1,
+            "expected": 1
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": 0,
+          "expected": 1
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "import math",
+        "code": "def solve(payload):\n    return math.factorial(payload)\n"
+      }
+    },
+    {
+      "id": "gcd",
+      "category": "numeric",
+      "task": {
+        "question": "实现同步函数 solve(payload)。返回整数 payload.a 和 payload.b 的非负最大公约数。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "a": 12,
+              "b": 18
+            },
+            "expected": 6
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "a": 7,
+              "b": 13
+            },
+            "expected": 1
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "a": 0,
+            "b": 9
+          },
+          "expected": 9
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "import math",
+        "code": "def solve(payload):\n    return math.gcd(payload['a'], payload['b'])\n"
+      }
+    },
+    {
+      "id": "sum_even",
+      "category": "sequence",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是整数数组，返回所有偶数之和。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "expected": 6
+          },
+          {
+            "name": "case_2",
+            "input": [
+              -2,
+              -1,
+              0,
+              6
+            ],
+            "expected": 4
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [],
+          "expected": 0
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return sum(x for x in payload if x % 2 == 0)\n"
+      }
+    },
+    {
+      "id": "unique_stable",
+      "category": "sequence",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是整数数组，去重并保持首次出现顺序。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              3,
+              1,
+              3,
+              2,
+              1
+            ],
+            "expected": [
+              3,
+              1,
+              2
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": [
+              0,
+              0
+            ],
+            "expected": [
+              0
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [],
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return list(dict.fromkeys(payload))\n"
+      }
+    },
+    {
+      "id": "prefix_sums",
+      "category": "sequence",
+      "task": {
+        "question": "实现同步函数 solve(payload)。返回整数数组 payload 的前缀和数组。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              1,
+              2,
+              3
+            ],
+            "expected": [
+              1,
+              3,
+              6
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": [
+              -1,
+              2,
+              -3
+            ],
+            "expected": [
+              -1,
+              1,
+              -2
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [],
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "import itertools",
+        "code": "def solve(payload):\n    return list(itertools.accumulate(payload))\n"
+      }
+    },
+    {
+      "id": "flatten",
+      "category": "sequence",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是二维整数数组，将它按顺序展开一层。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              [
+                1,
+                2
+              ],
+              [
+                3
+              ]
+            ],
+            "expected": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": [
+              [],
+              [
+                4
+              ],
+              []
+            ],
+            "expected": [
+              4
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [],
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return [x for row in payload for x in row]\n"
+      }
+    },
+    {
+      "id": "rotate_right",
+      "category": "sequence",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload.items 为数组，payload.k 为非负整数，向右循环移动 k 位；空数组返回空数组。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "items": [
+                1,
+                2,
+                3
+              ],
+              "k": 1
+            },
+            "expected": [
+              3,
+              1,
+              2
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "items": [
+                1,
+                2,
+                3
+              ],
+              "k": 4
+            },
+            "expected": [
+              3,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "items": [],
+            "k": 9
+          },
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    items = payload['items']\n    if not items:\n        return []\n    k = payload['k'] % len(items)\n    return items[-k:] + items[:-k]\n"
+      }
+    },
+    {
+      "id": "second_distinct",
+      "category": "sequence",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 为整数数组，返回第二大的不同整数；不足两个不同值则返回 null。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              4,
+              2,
+              4,
+              3
+            ],
+            "expected": 3
+          },
+          {
+            "name": "case_2",
+            "input": [
+              1,
+              1
+            ],
+            "expected": null
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [
+            -1,
+            -5,
+            -3
+          ],
+          "expected": -3
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    values = sorted(set(payload), reverse=True)\n    return values[1] if len(values) > 1 else None\n"
+      }
+    },
+    {
+      "id": "palindrome",
+      "category": "text",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是字符串，忽略大小写及非字母数字字符，判断是否为回文；空串是回文。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": "A man, a plan, a canal: Panama",
+            "expected": true
+          },
+          {
+            "name": "case_2",
+            "input": "hello",
+            "expected": false
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": "",
+          "expected": true
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    text = ''.join(c.lower() for c in payload if c.isalnum())\n    return text == text[::-1]\n"
+      }
+    },
+    {
+      "id": "word_count",
+      "category": "text",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是字符串，使用空白字符分词，不区分大小写，返回词频对象；不去除标点。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": "A b a",
+            "expected": {
+              "a": 2,
+              "b": 1
+            }
+          },
+          {
+            "name": "case_2",
+            "input": "x\tX\ny",
+            "expected": {
+              "x": 2,
+              "y": 1
+            }
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": "",
+          "expected": {}
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "from collections import Counter",
+        "code": "def solve(payload):\n    return dict(Counter(payload.lower().split()))\n"
+      }
+    },
+    {
+      "id": "reverse_words",
+      "category": "text",
+      "task": {
+        "question": "实现同步函数 solve(payload)。将 payload 字符串按空白分词后反转词序，用单个空格连接。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": "one two three",
+            "expected": "three two one"
+          },
+          {
+            "name": "case_2",
+            "input": "  a   b ",
+            "expected": "b a"
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": "",
+          "expected": ""
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return ' '.join(reversed(payload.split()))\n"
+      }
+    },
+    {
+      "id": "run_lengths",
+      "category": "text",
+      "task": {
+        "question": "实现同步函数 solve(payload)。将字符串 payload 连续相同字符编码为 [字符,次数] 数组，保留大小写。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": "aaabbc",
+            "expected": [
+              [
+                "a",
+                3
+              ],
+              [
+                "b",
+                2
+              ],
+              [
+                "c",
+                1
+              ]
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": "aAa",
+            "expected": [
+              [
+                "a",
+                1
+              ],
+              [
+                "A",
+                1
+              ],
+              [
+                "a",
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": "",
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "import itertools",
+        "code": "def solve(payload):\n    return [[key, len(list(group))] for key, group in itertools.groupby(payload)]\n"
+      }
+    },
+    {
+      "id": "anagram",
+      "category": "text",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload.a 与 payload.b 为字符串，忽略空白和大小写，判断是否字母异位；其他字符保留。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "a": "Listen",
+              "b": "Silent"
+            },
+            "expected": true
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "a": "a b",
+              "b": "ab"
+            },
+            "expected": true
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "a": "aa",
+            "b": "ab"
+          },
+          "expected": false
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    a = sorted(c.lower() for c in payload['a'] if not c.isspace())\n    b = sorted(c.lower() for c in payload['b'] if not c.isspace())\n    return a == b\n"
+      }
+    },
+    {
+      "id": "merge_counts",
+      "category": "mapping",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload.left 与 payload.right 是字符串到整数的对象，同名键求和，其他键保留。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "left": {
+                "a": 2
+              },
+              "right": {
+                "a": 3,
+                "b": 1
+              }
+            },
+            "expected": {
+              "a": 5,
+              "b": 1
+            }
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "left": {},
+              "right": {}
+            },
+            "expected": {}
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "left": {
+              "x": -2
+            },
+            "right": {
+              "x": 1
+            }
+          },
+          "expected": {
+            "x": -1
+          }
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    out = dict(payload['left'])\n    for k, v in payload['right'].items():\n        out[k] = out.get(k, 0) + v\n    return out\n"
+      }
+    },
+    {
+      "id": "sort_records",
+      "category": "mapping",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是含 name、score 的记录数组，按 score 降序、同分按 name 升序排序。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              {
+                "name": "b",
+                "score": 2
+              },
+              {
+                "name": "a",
+                "score": 2
+              }
+            ],
+            "expected": [
+              {
+                "name": "a",
+                "score": 2
+              },
+              {
+                "name": "b",
+                "score": 2
+              }
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": [
+              {
+                "name": "x",
+                "score": 1
+              },
+              {
+                "name": "y",
+                "score": 3
+              }
+            ],
+            "expected": [
+              {
+                "name": "y",
+                "score": 3
+              },
+              {
+                "name": "x",
+                "score": 1
+              }
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [],
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return sorted(payload, key=lambda x: (-x['score'], x['name']))\n"
+      }
+    },
+    {
+      "id": "group_names",
+      "category": "mapping",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是含 team、name 的记录数组，返回按 team 分组的 name 列表，保持各组原顺序。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              {
+                "team": "a",
+                "name": "x"
+              },
+              {
+                "team": "b",
+                "name": "y"
+              },
+              {
+                "team": "a",
+                "name": "z"
+              }
+            ],
+            "expected": {
+              "a": [
+                "x",
+                "z"
+              ],
+              "b": [
+                "y"
+              ]
+            }
+          },
+          {
+            "name": "case_2",
+            "input": [],
+            "expected": {}
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [
+            {
+              "team": "a",
+              "name": "x"
+            },
+            {
+              "team": "a",
+              "name": "x"
+            }
+          ],
+          "expected": {
+            "a": [
+              "x",
+              "x"
+            ]
+          }
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    out = {}\n    for row in payload:\n        out.setdefault(row['team'], []).append(row['name'])\n    return out\n"
+      }
+    },
+    {
+      "id": "transpose",
+      "category": "matrix",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 是矩形二维数组，返回转置；空数组或零列数组返回空数组。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ],
+            "expected": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "name": "case_2",
+            "input": [
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "expected": [
+              [
+                1
+              ],
+              [
+                2
+              ],
+              [
+                3
+              ]
+            ]
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": [],
+          "expected": []
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    return [list(row) for row in zip(*payload)]\n"
+      }
+    },
+    {
+      "id": "balanced",
+      "category": "text",
+      "task": {
+        "question": "实现同步函数 solve(payload)。payload 仅含 ()[]{}，判断括号是否正确嵌套且匹配。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": "([]{})",
+            "expected": true
+          },
+          {
+            "name": "case_2",
+            "input": "([)]",
+            "expected": false
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": "",
+          "expected": true
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "",
+        "code": "def solve(payload):\n    stack = []\n    pairs = {')':'(', ']':'[', '}':'{'}\n    for c in payload:\n        if c in '([{':\n            stack.append(c)\n        elif not stack or stack.pop() != pairs[c]:\n            return False\n    return not stack\n"
+      }
+    },
+    {
+      "id": "lcel_fake",
+      "category": "lcel",
+      "task": {
+        "question": "实现同步函数 solve(payload)。用 ChatPromptTemplate + FakeListLLM + StrOutputParser 构造链；prompt 使用 {text}，FakeListLLM responses=[payload.response]，调用 text=payload.text 并返回字符串。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": {
+              "text": "hello",
+              "response": "OK"
+            },
+            "expected": "OK"
+          },
+          {
+            "name": "case_2",
+            "input": {
+              "text": "你好",
+              "response": "收到"
+            },
+            "expected": "收到"
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": {
+            "text": "x",
+            "response": ""
+          },
+          "expected": ""
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser",
+        "code": "def solve(payload):\n    chain = ChatPromptTemplate.from_template('{text}') | FakeListLLM(responses=[payload['response']]) | StrOutputParser()\n    return chain.invoke({'text': payload['text']})\n"
+      }
+    },
+    {
+      "id": "lcel_lambda",
+      "category": "lcel",
+      "task": {
+        "question": "实现同步函数 solve(payload)。用两个 RunnableLambda 构造 LCEL 链，先将整数 payload 加 1 再乘 2，调用并返回结果。",
+        "execution_mode": "offline",
+        "cases": [
+          {
+            "name": "case_1",
+            "input": 2,
+            "expected": 6
+          },
+          {
+            "name": "case_2",
+            "input": -1,
+            "expected": 0
+          }
+        ]
+      },
+      "holdout_cases": [
+        {
+          "name": "case_3",
+          "input": 0,
+          "expected": 2
+        }
+      ],
+      "reference": {
+        "prefix": "人工维护的参考实现，仅用于验证评测集，不提供给生成器",
+        "imports": "from langchain_core.runnables import RunnableLambda",
+        "code": "def solve(payload):\n    chain = RunnableLambda(lambda x: x + 1) | RunnableLambda(lambda x: x * 2)\n    return chain.invoke(payload)\n"
+      }
+    }
+  ]
+}

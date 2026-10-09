@@ -1,0 +1,128 @@
+{
+  "manifest": {
+    "run_id": "20261001T063515Z-f8296bf8",
+    "mode": "simulate",
+    "corpus_version": "1.0.0",
+    "corpus_sha256": "9630f93abf41d495b1f168a86978c03043a718e86a6ea73892bc5958d3c75631",
+    "source_sha256": "b3f37ccff8e36705bb413b5ba4893242000cd55faad7e7cb074c4b659c2aa7d1",
+    "model": "scripted-fixture",
+    "temperatures": {
+      "coder": 0.2,
+      "reviewer": 0.0,
+      "reflector": 0.4
+    },
+    "strategies": [
+      "single",
+      "direct",
+      "full",
+      "adaptive"
+    ],
+    "repeats": 1,
+    "order_seed": 42,
+    "planned_workflows": 8,
+    "upper_bound_call_attempts": 56,
+    "budget_profile": "attempts",
+    "max_attempts": 3,
+    "run_config": {
+      "strategy": "adaptive",
+      "max_calls": 9,
+      "max_total_tokens": 150000,
+      "max_output_tokens": 2048,
+      "prompt_chars": 20000,
+      "feedback_chars": 6000,
+      "history_window": 3,
+      "repeat_limit": 3
+    },
+    "task_ids": [
+      "add",
+      "multiply"
+    ],
+    "sandbox_image": "code-assistant-sandbox:offline-v1",
+    "packages": {
+      "langgraph": "1.2.12",
+      "langchain-core": "1.6.6",
+      "langchain-deepseek": "1.1.1"
+    }
+  },
+  "completed_workflows": 8,
+  "complete": true,
+  "groups": {
+    "single": {
+      "runs": 2,
+      "successes": 1,
+      "pass_rate_all_runs": 0.5,
+      "excluded_infrastructure_runs": 0,
+      "pass_rate_eligible": 0.5,
+      "initial_failures": 1,
+      "repair_success_rate": 0.0,
+      "failed_attempts": 1,
+      "repeated_error_rate": 0.0,
+      "mean_repair_rounds": 0,
+      "mean_calls": 1,
+      "mean_elapsed_ms": 61.5,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 2,
+      "termination_counts": {
+        "single_attempt": 1,
+        "tests_passed": 1
+      }
+    },
+    "direct": {
+      "runs": 2,
+      "successes": 2,
+      "pass_rate_all_runs": 1.0,
+      "excluded_infrastructure_runs": 0,
+      "pass_rate_eligible": 1.0,
+      "initial_failures": 1,
+      "repair_success_rate": 1.0,
+      "failed_attempts": 1,
+      "repeated_error_rate": 0.0,
+      "mean_repair_rounds": 0.5,
+      "mean_calls": 1.5,
+      "mean_elapsed_ms": 54,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 3,
+      "termination_counts": {
+        "tests_passed": 2
+      }
+    },
+    "full": {
+      "runs": 2,
+      "successes": 2,
+      "pass_rate_all_runs": 1.0,
+      "excluded_infrastructure_runs": 0,
+      "pass_rate_eligible": 1.0,
+      "initial_failures": 1,
+      "repair_success_rate": 1.0,
+      "failed_attempts": 1,
+      "repeated_error_rate": 0.0,
+      "mean_repair_rounds": 0.5,
+      "mean_calls": 2.5,
+      "mean_elapsed_ms": 85,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 5,
+      "termination_counts": {
+        "tests_passed": 2
+      }
+    },
+    "adaptive": {
+      "runs": 2,
+      "successes": 2,
+      "pass_rate_all_runs": 1.0,
+      "excluded_infrastructure_runs": 0,
+      "pass_rate_eligible": 1.0,
+      "initial_failures": 1,
+      "repair_success_rate": 1.0,
+      "failed_attempts": 1,
+      "repeated_error_rate": 0.0,
+      "mean_repair_rounds": 0.5,
+      "mean_calls": 1.5,
+      "mean_elapsed_ms": 86,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 3,
+      "termination_counts": {
+        "tests_passed": 2
+      }
+    }
+  }
+}

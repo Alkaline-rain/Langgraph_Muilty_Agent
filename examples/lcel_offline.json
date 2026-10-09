@@ -1,0 +1,8 @@
+{
+  "question": "实现 solve(payload)，构造 ChatPromptTemplate + FakeListLLM + StrOutputParser 的 LCEL 链。prompt 模板为 {text}，FakeListLLM 的响应列表使用 [payload['response']]，调用链并返回字符串。",
+  "execution_mode": "offline",
+  "cases": [
+    {"name": "english", "input": {"text": "hello", "response": "OK"}, "expected": "OK"},
+    {"name": "unicode", "input": {"text": "你好", "response": "收到"}, "expected": "收到"}
+  ]
+}

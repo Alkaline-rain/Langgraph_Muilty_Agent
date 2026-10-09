@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "exec_error_type": "",
+  "exec_error": "",
+  "review_history": [],
+  "reflection_history": [],
+  "run_config": {
+    "strategy": "direct",
+    "max_calls": 9,
+    "max_total_tokens": 150000,
+    "max_output_tokens": 2048,
+    "prompt_chars": 20000,
+    "feedback_chars": 6000,
+    "history_window": 3,
+    "repeat_limit": 3
+  },
+  "llm_calls": 2,
+  "budget_tokens": 7194,
+  "call_history": [
+    {
+      "role": "coder",
+      "status": "ok",
+      "duration_ms": 0,
+      "usage": null,
+      "usage_source": "unknown",
+      "request_started": false,
+      "error_code": "",
+      "input_estimate": 1444,
+      "budget_charge": 3492
+    },
+    {
+      "role": "coder",
+      "status": "ok",
+      "duration_ms": 0,
+      "usage": null,
+      "usage_source": "unknown",
+      "request_started": false,
+      "error_code": "",
+      "input_estimate": 1654,
+      "budget_charge": 3702
+    }
+  ],
+  "attempt_history": [
+    {
+      "iteration": 1,
+      "success": false,
+      "error_type": "syntax_error",
+      "fingerprint": "2239d732fe36c4e2beb1",
+      "code_fingerprint": "fa8246c50da946080730",
+      "repeat_count": 1,
+      "duration_ms": 0,
+      "cases_run": 0,
+      "acceptance": {
+        "success": false,
+        "error_type": "syntax_error",
+        "error_message": "fixture: syntax_error",
+        "cases": [],
+        "duration_ms": 0,
+        "sandbox": "docker"
+      }
+    },
+    {
+      "iteration": 2,
+      "success": true,
+      "error_type": "",
+      "fingerprint": "",
+      "code_fingerprint": "fa8246c50da946080730",
+      "repeat_count": 0,
+      "duration_ms": 0,
+      "cases_run": 0,
+      "acceptance": {
+        "success": true,
+        "error_type": "",
+        "error_message": "",
+        "cases": [],
+        "duration_ms": 0,
+        "sandbox": "docker"
+      }
+    }
+  ],
+  "task_success": true,
+  "termination_reason": "tests_passed",
+  "acceptance": {
+    "success": true,
+    "error_type": "",
+    "error_message": "",
+    "cases": [],
+    "duration_ms": 0,
+    "sandbox": "docker"
+  },
+  "generation_history": [
+    {
+      "prefix": "SIMULATION ONLY",
+      "imports": "",
+      "code": "def solve(payload):\n    return None  # fixture 1"
+    },
+    {
+      "prefix": "SIMULATION ONLY",
+      "imports": "",
+      "code": "def solve(payload):\n    return None  # fixture 2"
+    }
+  ],
+  "route_path": [
+    "generate",
+    "execute",
+    "generate",
+    "execute"
+  ],
+  "iteration": 2,
+  "repair_count": 1,
+  "trace": [
+    {
+      "timestamp": "2026-10-01T06:35:15.275+00:00",
+      "kind": "route",
+      "node": "START",
+      "status": "ok",
+      "detail": {
+        "to": "generate",
+        "reason": "workflow"
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.275+00:00",
+      "kind": "node",
+      "node": "generate",
+      "status": "ok",
+      "detail": {
+        "iteration": 1
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.283+00:00",
+      "kind": "route",
+      "node": "generate",
+      "status": "ok",
+      "detail": {
+        "to": "execute",
+        "reason": "workflow"
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.283+00:00",
+      "kind": "node",
+      "node": "execute",
+      "status": "fail",
+      "detail": {
+        "iteration": 1,
+        "success": false,
+        "error_type": "syntax_error",
+        "fingerprint": "2239d732fe36c4e2beb1",
+        "code_fingerprint": "fa8246c50da946080730",
+        "repeat_count": 1,
+        "duration_ms": 0,
+        "cases_run": 0,
+        "acceptance": {
+          "success": false,
+          "error_type": "syntax_error",
+          "error_message": "fixture: syntax_error",
+          "cases": [],
+          "duration_ms": 0,
+          "sandbox": "docker"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.291+00:00",
+      "kind": "route",
+      "node": "execute",
+      "status": "ok",
+      "detail": {
+        "to": "generate",
+        "reason": "fix_syntax"
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.291+00:00",
+      "kind": "node",
+      "node": "generate",
+      "status": "ok",
+      "detail": {
+        "iteration": 2
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.291+00:00",
+      "kind": "route",
+      "node": "generate",
+      "status": "ok",
+      "detail": {
+        "to": "execute",
+        "reason": "fix_syntax"
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.291+00:00",
+      "kind": "node",
+      "node": "execute",
+      "status": "ok",
+      "detail": {
+        "iteration": 2,
+        "success": true,
+        "error_type": "",
+        "fingerprint": "",
+        "code_fingerprint": "fa8246c50da946080730",
+        "repeat_count": 0,
+        "duration_ms": 0,
+        "cases_run": 0,
+        "acceptance": {
+          "success": true,
+          "error_type": "",
+          "error_message": "",
+          "cases": [],
+          "duration_ms": 0,
+          "sandbox": "docker"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-01T06:35:15.291+00:00",
+      "kind": "route",
+      "node": "execute",
+      "status": "ok",
+      "detail": {
+        "to": "END",
+        "reason": "tests_passed"
+      }
+    }
+  ],
+  "failure_trail": [
+    {
+      "iteration": 1,
+      "fingerprint": "2239d732fe36c4e2beb1",
+      "code_fingerprint": "fa8246c50da946080730",
+      "repeat_count": 1,
+      "strategy": "fix_syntax",
+      "error_type": "syntax_error",
+      "error_message": "fixture: syntax_error",
+      "review_issues": [],
+      "review_suggestions": [],
+      "root_cause": "",
+      "new_approach": "",
+      "key_changes": []
+    }
+  ]
+}

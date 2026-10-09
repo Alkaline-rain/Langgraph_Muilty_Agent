@@ -1,0 +1,65 @@
+{
+  "run_id": "20261001T060208Z-106129b7",
+  "mode": "simulate",
+  "corpus_version": "1.0.0",
+  "corpus_sha256": "9630f93abf41d495b1f168a86978c03043a718e86a6ea73892bc5958d3c75631",
+  "source_sha256": "312fb7ce0a6d97012ef893c9b86d07fa224bb897f79379a3ec3f009529f4cc2f",
+  "model": "scripted-fixture",
+  "temperatures": {
+    "coder": 0.2,
+    "reviewer": 0.0,
+    "reflector": 0.4
+  },
+  "strategies": [
+    "single",
+    "direct",
+    "full",
+    "adaptive"
+  ],
+  "repeats": 1,
+  "order_seed": 42,
+  "budget_profile": "attempts",
+  "max_attempts": 3,
+  "run_config": {
+    "strategy": "adaptive",
+    "max_calls": 9,
+    "max_total_tokens": 150000,
+    "max_output_tokens": 2048,
+    "prompt_chars": 20000,
+    "feedback_chars": 6000,
+    "history_window": 3,
+    "repeat_limit": 3
+  },
+  "task_ids": [
+    "add",
+    "multiply",
+    "abs_difference",
+    "clamp",
+    "factorial",
+    "gcd",
+    "sum_even",
+    "unique_stable",
+    "prefix_sums",
+    "flatten",
+    "rotate_right",
+    "second_distinct",
+    "palindrome",
+    "word_count",
+    "reverse_words",
+    "run_lengths",
+    "anagram",
+    "merge_counts",
+    "sort_records",
+    "group_names",
+    "transpose",
+    "balanced",
+    "lcel_fake",
+    "lcel_lambda"
+  ],
+  "sandbox_image": "code-assistant-sandbox:offline-v1",
+  "packages": {
+    "langgraph": "1.2.12",
+    "langchain-core": "1.6.6",
+    "langchain-deepseek": "1.1.1"
+  }
+}

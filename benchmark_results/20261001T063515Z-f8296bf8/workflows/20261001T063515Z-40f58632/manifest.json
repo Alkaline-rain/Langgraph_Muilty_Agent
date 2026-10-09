@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261001T063515Z-40f58632",
+  "started_at": "2026-10-01T06:35:15.258+00:00",
+  "status": "succeeded",
+  "python": "3.12.10",
+  "platform": "Windows",
+  "model": "deepseek-v4-pro",
+  "source_sha256": "b3f37ccff8e36705bb413b5ba4893242000cd55faad7e7cb074c4b659c2aa7d1",
+  "task_sha256": "1111725f1d1ce89ec0efd28d80748861c265a8b394f18f9cc94f95a306c518b2",
+  "task_case_count": 2,
+  "requirements_sha256": "874e16d652a25804448bd079ac0c5737cd4451073be678dda9ff1e089a3cea81",
+  "packages": {
+    "langgraph": "1.2.12",
+    "langchain-core": "1.6.6",
+    "langchain-deepseek": "1.1.1"
+  },
+  "run_config": {
+    "strategy": "direct",
+    "max_calls": 9,
+    "max_total_tokens": 150000,
+    "max_output_tokens": 2048,
+    "prompt_chars": 20000,
+    "feedback_chars": 6000,
+    "history_window": 3,
+    "repeat_limit": 3
+  },
+  "max_iteration": 3,
+  "metadata": {
+    "task_id": "multiply",
+    "mode": "simulate",
+    "repetition": 0
+  },
+  "finished_at": "2026-10-01T06:35:15.309+00:00",
+  "elapsed_ms": 46,
+  "termination_reason": "tests_passed"
+}

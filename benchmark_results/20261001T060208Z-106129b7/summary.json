@@ -1,0 +1,153 @@
+{
+  "manifest": {
+    "run_id": "20261001T060208Z-106129b7",
+    "mode": "simulate",
+    "corpus_version": "1.0.0",
+    "corpus_sha256": "9630f93abf41d495b1f168a86978c03043a718e86a6ea73892bc5958d3c75631",
+    "source_sha256": "312fb7ce0a6d97012ef893c9b86d07fa224bb897f79379a3ec3f009529f4cc2f",
+    "model": "scripted-fixture",
+    "temperatures": {
+      "coder": 0.2,
+      "reviewer": 0.0,
+      "reflector": 0.4
+    },
+    "strategies": [
+      "single",
+      "direct",
+      "full",
+      "adaptive"
+    ],
+    "repeats": 1,
+    "order_seed": 42,
+    "budget_profile": "attempts",
+    "max_attempts": 3,
+    "run_config": {
+      "strategy": "adaptive",
+      "max_calls": 9,
+      "max_total_tokens": 150000,
+      "max_output_tokens": 2048,
+      "prompt_chars": 20000,
+      "feedback_chars": 6000,
+      "history_window": 3,
+      "repeat_limit": 3
+    },
+    "task_ids": [
+      "add",
+      "multiply",
+      "abs_difference",
+      "clamp",
+      "factorial",
+      "gcd",
+      "sum_even",
+      "unique_stable",
+      "prefix_sums",
+      "flatten",
+      "rotate_right",
+      "second_distinct",
+      "palindrome",
+      "word_count",
+      "reverse_words",
+      "run_lengths",
+      "anagram",
+      "merge_counts",
+      "sort_records",
+      "group_names",
+      "transpose",
+      "balanced",
+      "lcel_fake",
+      "lcel_lambda"
+    ],
+    "sandbox_image": "code-assistant-sandbox:offline-v1",
+    "packages": {
+      "langgraph": "1.2.12",
+      "langchain-core": "1.6.6",
+      "langchain-deepseek": "1.1.1"
+    }
+  },
+  "groups": {
+    "single": {
+      "runs": 24,
+      "successes": 4,
+      "pass_rate_all_runs": 0.16666666666666666,
+      "excluded_infrastructure_runs": 4,
+      "pass_rate_eligible": 0.2,
+      "initial_failures": 16,
+      "repair_success_rate": 0.0,
+      "failed_attempts": 16,
+      "repeated_error_rate": 0.0,
+      "mean_repair_rounds": 0,
+      "mean_calls": 1,
+      "mean_elapsed_ms": 2,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 24,
+      "termination_counts": {
+        "single_attempt": 16,
+        "environment_error": 4,
+        "tests_passed": 4
+      }
+    },
+    "direct": {
+      "runs": 24,
+      "successes": 16,
+      "pass_rate_all_runs": 0.6666666666666666,
+      "excluded_infrastructure_runs": 4,
+      "pass_rate_eligible": 0.8,
+      "initial_failures": 16,
+      "repair_success_rate": 0.75,
+      "failed_attempts": 28,
+      "repeated_error_rate": 0.42857142857142855,
+      "mean_repair_rounds": 1,
+      "mean_calls": 2,
+      "mean_elapsed_ms": 2.4583333333333335,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 48,
+      "termination_counts": {
+        "tests_passed": 16,
+        "environment_error": 4,
+        "max_iterations": 4
+      }
+    },
+    "full": {
+      "runs": 24,
+      "successes": 16,
+      "pass_rate_all_runs": 0.6666666666666666,
+      "excluded_infrastructure_runs": 4,
+      "pass_rate_eligible": 0.8,
+      "initial_failures": 16,
+      "repair_success_rate": 0.75,
+      "failed_attempts": 28,
+      "repeated_error_rate": 0.42857142857142855,
+      "mean_repair_rounds": 1,
+      "mean_calls": 4,
+      "mean_elapsed_ms": 6.333333333333333,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 96,
+      "termination_counts": {
+        "tests_passed": 16,
+        "environment_error": 4,
+        "max_iterations": 4
+      }
+    },
+    "adaptive": {
+      "runs": 24,
+      "successes": 16,
+      "pass_rate_all_runs": 0.6666666666666666,
+      "excluded_infrastructure_runs": 4,
+      "pass_rate_eligible": 0.8,
+      "initial_failures": 16,
+      "repair_success_rate": 0.75,
+      "failed_attempts": 28,
+      "repeated_error_rate": 0.42857142857142855,
+      "mean_repair_rounds": 1,
+      "mean_calls": 3.3333333333333335,
+      "mean_elapsed_ms": 6.541666666666667,
+      "provider_total_tokens": null,
+      "unknown_usage_calls": 80,
+      "termination_counts": {
+        "tests_passed": 16,
+        "environment_error": 4,
+        "max_iterations": 4
+      }
+    }
+  }
+}
