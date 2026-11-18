@@ -8,16 +8,16 @@ import unittest
 from unittest.mock import Mock, patch
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "code_assistant"))
+sys.path.insert(0, str(ROOT))
 
 from langchain_core.messages import AIMessage
 from langchain_core.prompts import ChatPromptTemplate
-from main import build_graph, initial_state
-from schemas.models import TaskSpec, RunConfig, CodeSolution, ReviewResult, ReflectionResult, AcceptanceResult
-from utils.llm_runtime import call_agent, structured_call
-from utils.repair_policy import fingerprint, code_fingerprint, feedback
-from utils.acceptance import evaluate
-from benchmark import load_corpus, run_experiment, aggregate
+from code_assistant.main import build_graph, initial_state
+from code_assistant.schemas.models import TaskSpec, RunConfig, CodeSolution, ReviewResult, ReflectionResult, AcceptanceResult
+from code_assistant.utils.llm_runtime import call_agent, structured_call
+from code_assistant.utils.repair_policy import fingerprint, code_fingerprint, feedback
+from code_assistant.utils.acceptance import evaluate
+from code_assistant.benchmark import load_corpus, run_experiment, aggregate
 
 TASK = TaskSpec.model_validate_json((ROOT / "examples/add.json").read_text(encoding="utf-8"))
 SOLUTION = CodeSolution(prefix="test", imports="", code="def solve(payload):\n    return payload['a'] + payload['b']")
@@ -122,7 +122,7 @@ class BudgetTests(unittest.TestCase):
         fake.with_structured_output.return_value.invoke.return_value = reply
         prompt = ChatPromptTemplate.from_template("Question: {question}")
         fn = lambda **kw: structured_call(prompt, CodeSolution, kw, 0.2)
-        with patch("utils.llm_runtime.get_llm", return_value=fake) as factory:
+        with patch("code_assistant.utils.llm_runtime.get_llm", return_value=fake) as factory:
             result = call_agent(initial_state(TASK, run_config=config), "coder", fn, {"question": "hello"})
         return result, factory, fake
 
@@ -148,7 +148,7 @@ class BudgetTests(unittest.TestCase):
     def test_complete_template_budget_checked_before_request(self):
         fake = Mock()
         prompt = ChatPromptTemplate.from_template("x" * 3000 + "{question}")
-        with patch("utils.llm_runtime.get_llm", return_value=fake) as factory:
+        with patch("code_assistant.utils.llm_runtime.get_llm", return_value=fake) as factory:
             _, update, reason, _ = call_agent(initial_state(TASK, run_config=RunConfig(prompt_chars=1000)),
                 "coder", lambda **kw: structured_call(prompt, CodeSolution, kw, 0.2), {"question": "short"})
         self.assertEqual(reason, "token_budget")
@@ -180,7 +180,7 @@ class BenchmarkTests(unittest.TestCase):
             self.assertTrue(all("expected" not in json.dumps(r["call_history"]) for r in rows))
 
     def test_live_preflight_does_not_run_or_create_report(self):
-        with tempfile.TemporaryDirectory() as directory, patch("benchmark.DockerSandbox.preflight", return_value="missing"), patch("benchmark.build_graph") as build:
+        with tempfile.TemporaryDirectory() as directory, patch("code_assistant.benchmark.DockerSandbox.preflight", return_value="missing"), patch("code_assistant.benchmark.build_graph") as build:
             with self.assertRaises(RuntimeError):
                 run_experiment(ROOT / "benchmarks/tasks.v1.json", directory, mode="live")
             build.assert_not_called()

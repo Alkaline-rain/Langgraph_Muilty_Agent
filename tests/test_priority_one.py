@@ -7,15 +7,15 @@ import unittest
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "code_assistant"))
+sys.path.insert(0, str(ROOT))
 
-from schemas.models import TaskSpec, ExecutionResult, AcceptanceResult, CodeSolution, ReviewResult, ReflectionResult
-from utils.acceptance import evaluate
-from utils.static_validation import validate_code
-from utils.sandbox import execute_code
-from utils.docker_sandbox import DockerSandbox, run_bounded, MAX_OUTPUT
-from graph.edges import route_after_execute, route_after_review
-from main import build_graph, initial_state
+from code_assistant.schemas.models import TaskSpec, ExecutionResult, AcceptanceResult, CodeSolution, ReviewResult, ReflectionResult
+from code_assistant.utils.acceptance import evaluate
+from code_assistant.utils.static_validation import validate_code
+from code_assistant.utils.sandbox import execute_code
+from code_assistant.utils.docker_sandbox import DockerSandbox, run_bounded, MAX_OUTPUT
+from code_assistant.graph.edges import route_after_execute, route_after_review
+from code_assistant.main import build_graph, initial_state
 
 
 TASK = TaskSpec.model_validate_json((ROOT / "examples/add.json").read_text(encoding="utf-8"))
@@ -86,19 +86,19 @@ class SecurityTests(unittest.TestCase):
                 run.assert_not_called()
 
     def test_auto_missing_docker_fails_closed(self):
-        with patch.dict(os.environ, {"SANDBOX_MODE": "auto"}), patch("utils.docker_sandbox.find_docker", return_value=None):
+        with patch.dict(os.environ, {"SANDBOX_MODE": "auto"}), patch("code_assistant.utils.docker_sandbox.find_docker", return_value=None):
             self.assertEqual(execute_code("", GOOD).error_type, "sandbox_error")
 
     def test_legacy_executor_is_disabled(self):
-        from utils.safe_executor import execute_code as legacy
+        from code_assistant.utils.safe_executor import execute_code as legacy
         self.assertEqual(legacy("", "raise AssertionError('must not run')").error_type, "sandbox_error")
 
     def test_daemon_failure_is_environment_error(self):
-        with patch("utils.docker_sandbox.shutil.which", return_value="docker"), patch("utils.docker_sandbox.subprocess.run", return_value=subprocess.CompletedProcess([], 1, "", "daemon unavailable")):
+        with patch("code_assistant.utils.docker_sandbox.shutil.which", return_value="docker"), patch("code_assistant.utils.docker_sandbox.subprocess.run", return_value=subprocess.CompletedProcess([], 1, "", "daemon unavailable")):
             self.assertEqual(execute_code("", GOOD).error_type, "sandbox_error")
 
     def test_runtime_command_and_cleanup(self):
-        with patch.object(DockerSandbox, "preflight", return_value=""), patch("utils.docker_sandbox.run_bounded", return_value=(0, "5", "", "")) as run, patch.object(DockerSandbox, "_cleanup", return_value="") as cleanup:
+        with patch.object(DockerSandbox, "preflight", return_value=""), patch("code_assistant.utils.docker_sandbox.run_bounded", return_value=(0, "5", "", "")) as run, patch.object(DockerSandbox, "_cleanup", return_value="") as cleanup:
             self.assertTrue(DockerSandbox().execute("", GOOD, stdin='{"a":2,"b":3}').success)
             cmd = run.call_args.args[0]
             for flag, value in (("--network", "none"), ("--read-only", None), ("--cap-drop", "ALL"), ("--user", "65534:65534"), ("--pull", "never")):
@@ -110,16 +110,16 @@ class SecurityTests(unittest.TestCase):
 
     def test_timeout_output_and_process_error_cleanup(self):
         for reason in ("timeout", "output_limit"):
-            with patch.object(DockerSandbox, "preflight", return_value=""), patch("utils.docker_sandbox.run_bounded", return_value=(-1, "", "", reason)), patch.object(DockerSandbox, "_cleanup", return_value="") as cleanup:
+            with patch.object(DockerSandbox, "preflight", return_value=""), patch("code_assistant.utils.docker_sandbox.run_bounded", return_value=(-1, "", "", reason)), patch.object(DockerSandbox, "_cleanup", return_value="") as cleanup:
                 result = DockerSandbox().execute("", GOOD)
                 self.assertEqual(result.error_type, "timeout_error" if reason == "timeout" else "resource_error")
                 cleanup.assert_called_once()
-        with patch.object(DockerSandbox, "preflight", return_value=""), patch("utils.docker_sandbox.run_bounded", side_effect=OSError("failed")), patch.object(DockerSandbox, "_cleanup", return_value="") as cleanup:
+        with patch.object(DockerSandbox, "preflight", return_value=""), patch("code_assistant.utils.docker_sandbox.run_bounded", side_effect=OSError("failed")), patch.object(DockerSandbox, "_cleanup", return_value="") as cleanup:
             self.assertEqual(DockerSandbox().execute("", GOOD).error_type, "sandbox_error")
             cleanup.assert_called_once()
 
     def test_cleanup_failure_cannot_report_success(self):
-        with patch.object(DockerSandbox, "preflight", return_value=""), patch("utils.docker_sandbox.run_bounded", return_value=(0, "5", "", "")), patch.object(DockerSandbox, "_cleanup", return_value="daemon unreachable"):
+        with patch.object(DockerSandbox, "preflight", return_value=""), patch("code_assistant.utils.docker_sandbox.run_bounded", return_value=(0, "5", "", "")), patch.object(DockerSandbox, "_cleanup", return_value="daemon unreachable"):
             self.assertEqual(DockerSandbox().execute("", GOOD).error_type, "sandbox_error")
 
     def test_exit_codes(self):
@@ -140,7 +140,7 @@ class SecurityTests(unittest.TestCase):
 class WorkflowTests(unittest.TestCase):
     def run_graph(self, outcomes, limit=3):
         solution = CodeSolution(prefix="test", imports="", code=GOOD)
-        with patch("graph.nodes.invoke_coder", return_value=solution), patch("graph.nodes.invoke_reviewer", return_value=ReviewResult(passes=True, issues=[], suggestions=[])), patch("graph.nodes.invoke_reflector", return_value=ReflectionResult(root_cause="logic", new_approach="fix", key_changes=["fix"])), patch("graph.nodes.evaluate", side_effect=outcomes):
+        with patch("code_assistant.graph.nodes.invoke_coder", return_value=solution), patch("code_assistant.graph.nodes.invoke_reviewer", return_value=ReviewResult(passes=True, issues=[], suggestions=[])), patch("code_assistant.graph.nodes.invoke_reflector", return_value=ReflectionResult(root_cause="logic", new_approach="fix", key_changes=["fix"])), patch("code_assistant.graph.nodes.evaluate", side_effect=outcomes):
             return build_graph().invoke(initial_state(TASK, limit), config={"recursion_limit": 100})
 
     def test_failed_tests_review_passes_still_repairs(self):
@@ -192,7 +192,7 @@ class DockerIntegrationTests(unittest.TestCase):
 
     def test_output_limit(self):
         result = execute_code("", "def solve(payload):\n    print('x' * 200000)\n    return 1")
-        self.assertEqual(result.error_type, "resource_error")
+        self.assertEqual(result.error_type, "resource_error", result.error_message)
 
     def test_offline_lcel(self):
         imports = "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser"

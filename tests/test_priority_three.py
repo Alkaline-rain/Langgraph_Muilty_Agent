@@ -10,14 +10,14 @@ import httpx
 from openai import AuthenticationError, RateLimitError, APITimeoutError, APIConnectionError, APIStatusError
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "code_assistant"))
-from main import build_graph, initial_state, main
-from schemas.models import TaskSpec, CodeSolution, AcceptanceResult
-from utils.run_store import RunStore, run_recorded
-from utils.trace import dump
-from utils.errors import model_error_code, OutputParseError
-from utils.docker_sandbox import DockerSandbox, run_bounded, find_docker
-from doctor import diagnose
+sys.path.insert(0, str(ROOT))
+from code_assistant.main import build_graph, initial_state, main
+from code_assistant.schemas.models import TaskSpec, CodeSolution, AcceptanceResult
+from code_assistant.utils.run_store import RunStore, run_recorded
+from code_assistant.utils.trace import dump
+from code_assistant.utils.errors import model_error_code, OutputParseError
+from code_assistant.utils.docker_sandbox import DockerSandbox, run_bounded, find_docker
+from code_assistant.doctor import diagnose
 
 TASK = TaskSpec.model_validate_json((ROOT / "examples/add.json").read_text(encoding="utf-8"))
 GEN = {"prefix": "test", "imports": "", "code": "def solve(payload):\n    return 5"}
@@ -75,7 +75,7 @@ class RunStoreTests(unittest.TestCase):
         reviewer.assert_not_called()
 
     def test_environment_failure_is_written_before_model_call(self):
-        with tempfile.TemporaryDirectory() as root, patch("sys.argv", ["main.py", "--task", str(ROOT / "examples/add.json"), "--output", root]), patch("main.DockerSandbox.preflight", return_value="engine stopped"), patch("main.build_graph") as graph:
+        with tempfile.TemporaryDirectory() as root, patch("sys.argv", ["main.py", "--task", str(ROOT / "examples/add.json"), "--output", root]), patch("code_assistant.main.DockerSandbox.preflight", return_value="engine stopped"), patch("code_assistant.main.build_graph") as graph:
             with self.assertRaises(SystemExit) as raised:
                 main()
             self.assertEqual(raised.exception.code, 2)
@@ -99,11 +99,11 @@ class ErrorClassificationTests(unittest.TestCase):
                 self.assertEqual(model_error_code(error), code)
 
     def test_docker_discovery_handles_access_denied(self):
-        with patch("utils.docker_sandbox.shutil.which", return_value=None), patch("pathlib.Path.is_file", side_effect=PermissionError()):
+        with patch("code_assistant.utils.docker_sandbox.shutil.which", return_value=None), patch("pathlib.Path.is_file", side_effect=PermissionError()):
             self.assertIsNone(find_docker())
 
     def test_doctor_missing_engine_never_probes(self):
-        with patch("doctor.DockerSandbox.preflight", return_value="not ready"), patch("doctor.DockerSandbox.execute") as execute:
+        with patch("code_assistant.doctor.DockerSandbox.preflight", return_value="not ready"), patch("code_assistant.doctor.DockerSandbox.execute") as execute:
             report = diagnose(probe=True)
             self.assertFalse(report["ready"])
             execute.assert_not_called()
@@ -131,7 +131,7 @@ print(json.dumps({'uid':os.getuid(), 'interfaces':os.listdir('/sys/class/net'),
         def execute_probe(cmd, data, timeout):
             index = cmd.index(DockerSandbox().image)
             return run_bounded(cmd[:index+1] + ["python", "-I", "-c", probe], b"", timeout)
-        with patch("utils.docker_sandbox.run_bounded", side_effect=execute_probe):
+        with patch("code_assistant.utils.docker_sandbox.run_bounded", side_effect=execute_probe):
             result = DockerSandbox().execute("", GEN["code"])
         self.assertTrue(result.success, result.error_message)
         data = json.loads(result.stdout)

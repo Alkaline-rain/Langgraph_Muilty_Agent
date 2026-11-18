@@ -2,8 +2,8 @@
 
 from langchain_core.prompts import ChatPromptTemplate
 
-from utils.llm_runtime import structured_call
-from schemas.models import ReflectionResult
+from code_assistant.utils.llm_runtime import structured_call
+from code_assistant.schemas.models import ReflectionResult
 
 # Reflector 专属提示词：做「元思考」，分析思路层面的偏差
 reflect_prompt = ChatPromptTemplate.from_messages(

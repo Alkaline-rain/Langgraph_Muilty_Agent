@@ -1,3 +1,7 @@
+if __package__ in (None, ""):
+    from _entry import bootstrap
+    bootstrap()
+
 """入口：读取人工验收任务，预检 Docker，再运行生成与修复闭环。"""
 
 import argparse
@@ -9,15 +13,15 @@ from pathlib import Path
 from langchain_core.messages import HumanMessage
 from langgraph.graph import END, START, StateGraph
 
-from graph.edges import route_after_execute, route_after_review, route_after_reflect, route_after_generate
-from graph.nodes import execute, generate, reflect, review
-from graph.state import GraphState
-from utils.doc_loader import load_lcel_context
-from utils.trace import dump, summarize
-from utils.trace import atomic_json
-from schemas.models import TaskSpec, RunConfig
-from utils.docker_sandbox import DockerSandbox
-from utils.run_store import RunStore, run_recorded, mark_failure
+from code_assistant.graph.edges import route_after_execute, route_after_review, route_after_reflect, route_after_generate
+from code_assistant.graph.nodes import execute, generate, reflect, review
+from code_assistant.graph.state import GraphState
+from code_assistant.utils.doc_loader import load_lcel_context
+from code_assistant.utils.trace import dump, summarize
+from code_assistant.utils.trace import atomic_json
+from code_assistant.schemas.models import TaskSpec, RunConfig
+from code_assistant.utils.docker_sandbox import DockerSandbox
+from code_assistant.utils.run_store import RunStore, run_recorded, mark_failure
 
 
 def build_graph(agents=None, evaluator=None, observer=None):

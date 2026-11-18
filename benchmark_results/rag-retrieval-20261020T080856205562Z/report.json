@@ -1,0 +1,2434 @@
+{
+  "snapshot": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+  "queries_hash": "a030806222ddbf9ca098967aea128274e2677181fcf8a65f48a9ffd21f63ca27",
+  "label_status": "project-authored seed labels; not independently reviewed; do not claim generalization",
+  "requested_mode": "bm25",
+  "split": "test",
+  "queries": 15,
+  "summary": {
+    "recall": 1.0,
+    "mrr": 1.0,
+    "ndcg": 1.0,
+    "unanswerable_false_evidence_rate": 1.0
+  },
+  "rows": [
+    {
+      "id": "q11",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "RunnableParallel 各分支接收什么输入",
+        "query_hash": "22e53bd17253c7a95a980af5dacdf414fa8362a575cfb1f9e7083d8800154ff6",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "02ac5fe953005137cb88e4d817f6a7ae6091d1edee829c80510f5c47ba532880",
+            "child_ids": [
+              "610f2e86ec32b0954f38f4c289c762326a436256ad20f007a129447892843fb8"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-211d821df281",
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnableParallel 分支输入",
+            "start_line": 78,
+            "end_line": 81,
+            "content_hash": "16c0d7c938bfc1ee19d2a443b4f0b93910e368019de45fffb097bf983685e377",
+            "text": "## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-c576344717db",
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 错误分类与验证",
+            "start_line": 124,
+            "end_line": 126,
+            "content_hash": "aed916e9fc73506b6753e666c40f20c01e63498b8d042f40f875a047b38d752f",
+            "text": "## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-196642115dfe",
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / batch 批量调用",
+            "start_line": 49,
+            "end_line": 52,
+            "content_hash": "6104252d54d226496746c49c0d726d3c2185f4b44ab271c7f7d3e082ec6c424c",
+            "text": "## batch 批量调用\n\nRunnable.batch 接收输入列表并返回输出列表。每个输入必须符合链入口协议。若需求只处理一个 payload，使用 invoke，避免无意把字典迭代为键。\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-211d821df281] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnableParallel 分支输入\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=78-81\n## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n\n\n[K-c576344717db] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 错误分类与验证\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=124-126\n## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n\n\n[K-196642115dfe] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / batch 批量调用\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=49-52\n## batch 批量调用\n\nRunnable.batch 接收输入列表并返回输出列表。每个输入必须符合链入口协议。若需求只处理一个 payload，使用 invoke，避免无意把字典迭代为键。\n\n\n",
+        "duration_ms": 14
+      }
+    },
+    {
+      "id": "q12",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "如何使用 RunnablePassthrough 保留原始值",
+        "query_hash": "0457ee4a4d0038387ac66a0491999c8817eb756c08ac135fa8c469b465da9500",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "02ac5fe953005137cb88e4d817f6a7ae6091d1edee829c80510f5c47ba532880",
+            "child_ids": [
+              "610f2e86ec32b0954f38f4c289c762326a436256ad20f007a129447892843fb8"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "3e3f7caaa590c70e46d4f9517f73de1d5a71ba385637b86ab2403cebcb922145",
+            "child_ids": [
+              "8f81c8d741272a06ed6c097ca76b40ddfd69ba549d38b8941b23b24f43de0283"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-e3db07f1af0d",
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnablePassthrough 保留值",
+            "start_line": 82,
+            "end_line": 85,
+            "content_hash": "e22f1a30d918f29d636f3cbfcda46750a32e160854496b592ff76e430b3460f9",
+            "text": "## RunnablePassthrough 保留值\n\nRunnablePassthrough 将输入传递下去。输入为字典时可在后续映射中保留已有字段；不要假定一个普通字符串已经包含可索引的命名字段。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-211d821df281",
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnableParallel 分支输入",
+            "start_line": 78,
+            "end_line": 81,
+            "content_hash": "16c0d7c938bfc1ee19d2a443b4f0b93910e368019de45fffb097bf983685e377",
+            "text": "## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-a94227b0fde4",
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 模板变量与字面花括号",
+            "start_line": 14,
+            "end_line": 21,
+            "content_hash": "600d32c177d5991a1401fed8dc84691ce004e166ca9e8f4593c1bf283c60d740",
+            "text": "## 模板变量与字面花括号\n\n模板文本中的花括号可能被解释为变量。需要表达 JSON 字面对象时，对作为字面的花括号使用双花括号。只转义字面部分，保留需要替换的变量。\n\n```python\nprompt = ChatPromptTemplate.from_template('{{\"answer\": \"{text}\"}}')\n```\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-e3db07f1af0d] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnablePassthrough 保留值\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=82-85\n## RunnablePassthrough 保留值\n\nRunnablePassthrough 将输入传递下去。输入为字典时可在后续映射中保留已有字段；不要假定一个普通字符串已经包含可索引的命名字段。\n\n\n\n[K-211d821df281] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnableParallel 分支输入\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=78-81\n## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n\n\n[K-a94227b0fde4] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 模板变量与字面花括号\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=14-21\n## 模板变量与字面花括号\n\n模板文本中的花括号可能被解释为变量。需要表达 JSON 字面对象时，对作为字面的花括号使用双花括号。只转义字面部分，保留需要替换的变量。\n\n```python\nprompt = ChatPromptTemplate.from_template('{{\"answer\": \"{text}\"}}')\n```\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q13",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "FakeListLLM 从哪里导入如何提供 responses",
+        "query_hash": "fe0a8f805ef8f48009b8620454108e97161cc1875bbf7b79ca106c207b55163c",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-7ebfe38ea446",
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 离线响应",
+            "start_line": 86,
+            "end_line": 94,
+            "content_hash": "8e56cd6600986b479d90b884e20c3c2c982bb254bdfd9ea40b13386f45695166",
+            "text": "## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-13a6d3e8c260",
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 与输入语义",
+            "start_line": 95,
+            "end_line": 98,
+            "content_hash": "6e9480e280f33200e4eb567372251eb4d8524d9b87d5d132d7982feddf3ae78e",
+            "text": "## FakeListLLM 与输入语义\n\nFakeListLLM 的返回取决于 responses 配置，不会根据提示词真实推理。若任务要求返回 payload.response，应由任务输入构造相应 responses，不能期待修改 prompt 就改变固定回答。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-4c4d64b0d66c",
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnableLambda 字典输入",
+            "start_line": 61,
+            "end_line": 68,
+            "content_hash": "f2dbd66fe1c7afdb38d974805afdc580593eae15671597181fd02fcfd876fa5e",
+            "text": "## RunnableLambda 字典输入\n\n如果上游提供字典，lambda 应读取相应字段；不能直接对字典调用字符串方法。可先用一个步骤抽取字段，再交给字符串处理步骤。\n\n```python\nstep = RunnableLambda(lambda data: data[\"text\"].upper())\n```\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-7ebfe38ea446] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 离线响应\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=86-94\n## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n\n\n[K-13a6d3e8c260] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 与输入语义\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=95-98\n## FakeListLLM 与输入语义\n\nFakeListLLM 的返回取决于 responses 配置，不会根据提示词真实推理。若任务要求返回 payload.response，应由任务输入构造相应 responses，不能期待修改 prompt 就改变固定回答。\n\n\n\n[K-4c4d64b0d66c] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnableLambda 字典输入\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=61-68\n## RunnableLambda 字典输入\n\n如果上游提供字典，lambda 应读取相应字段；不能直接对字典调用字符串方法。可先用一个步骤抽取字段，再交给字符串处理步骤。\n\n```python\nstep = RunnableLambda(lambda data: data[\"text\"].upper())\n```\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q14",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "为什么改 prompt 不改变 FakeListLLM 固定回答",
+        "query_hash": "ec3e57c509e8b68a6dd32c64b357d740357acdd2e79b71dda9ec9b7fa90f9892",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "d549b4b88293450ca901e91b1df740f0f326b9094b464272eceb4244b01b1234",
+            "child_ids": [
+              "8ef7e473bb0d9031cd0d9ff193e9000662f80fbbb778576a1809e8ad7a78e219"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-13a6d3e8c260",
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 与输入语义",
+            "start_line": 95,
+            "end_line": 98,
+            "content_hash": "6e9480e280f33200e4eb567372251eb4d8524d9b87d5d132d7982feddf3ae78e",
+            "text": "## FakeListLLM 与输入语义\n\nFakeListLLM 的返回取决于 responses 配置，不会根据提示词真实推理。若任务要求返回 payload.response，应由任务输入构造相应 responses，不能期待修改 prompt 就改变固定回答。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-7ebfe38ea446",
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 离线响应",
+            "start_line": 86,
+            "end_line": 94,
+            "content_hash": "8e56cd6600986b479d90b884e20c3c2c982bb254bdfd9ea40b13386f45695166",
+            "text": "## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-c0e683ff366d",
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 链中的输入映射",
+            "start_line": 69,
+            "end_line": 77,
+            "content_hash": "49bed1bae4e7f3bad5580b136f53cb1e22f2ab28fce14f1e0c584494652cac7e",
+            "text": "## 链中的输入映射\n\n上游 payload 的字段名可能与 prompt 变量不同。应在进入 prompt 前明确映射，而不是修改与用户约定的输入协议。\n\n```python\nmap_input = RunnableLambda(lambda payload: {\"text\": payload[\"question\"]})\nchain = map_input | prompt\n```\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-13a6d3e8c260] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 与输入语义\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=95-98\n## FakeListLLM 与输入语义\n\nFakeListLLM 的返回取决于 responses 配置，不会根据提示词真实推理。若任务要求返回 payload.response，应由任务输入构造相应 responses，不能期待修改 prompt 就改变固定回答。\n\n\n\n[K-7ebfe38ea446] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 离线响应\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=86-94\n## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n\n\n[K-c0e683ff366d] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 链中的输入映射\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=69-77\n## 链中的输入映射\n\n上游 payload 的字段名可能与 prompt 变量不同。应在进入 prompt 前明确映射，而不是修改与用户约定的输入协议。\n\n```python\nmap_input = RunnableLambda(lambda payload: {\"text\": payload[\"question\"]})\nchain = map_input | prompt\n```\n\n\n",
+        "duration_ms": 15
+      }
+    },
+    {
+      "id": "q15",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "StrOutputParser 是否把 JSON 字符串变成对象",
+        "query_hash": "b114b816227a0ba8ae0f249754543bf437f600a7d3b85fe1f3a1d85517fc4ce6",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c966a536494a6359b25a1d04dc4e4d31de369bf3c83d6422db8792b3e40255e8",
+            "child_ids": [
+              "5583aa9e2ffbb8b3f5b36d6a9d4f3caa86952c91ee7ca5f1074fab482abb88fa"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "3e3f7caaa590c70e46d4f9517f73de1d5a71ba385637b86ab2403cebcb922145",
+            "child_ids": [
+              "8f81c8d741272a06ed6c097ca76b40ddfd69ba549d38b8941b23b24f43de0283"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-8014deb939f7",
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / StrOutputParser 输出",
+            "start_line": 99,
+            "end_line": 107,
+            "content_hash": "fdf50f00f2018360f5b98433073ef6a02f19de31ff35e3c67bed9ab0f48e2562",
+            "text": "## StrOutputParser 输出\n\nStrOutputParser 将兼容模型输出解析为文本，不负责把 JSON 字符串转为字典，也不自动提取文本中的业务字段。\n\n```python\nchain = prompt | model | StrOutputParser()\ntext = chain.invoke({\"text\": \"hello\"})\n```\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-ac547d345df5",
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / LCEL 管道运算符",
+            "start_line": 37,
+            "end_line": 44,
+            "content_hash": "19b486ab8d9849ddc840113449c0c97c0548f2c41c5755318ebccba4f72da502",
+            "text": "## LCEL 管道运算符\n\nLCEL 使用 | 将 Runnable 或可适配对象组合。每一步输出成为下一步输入。只检查组件类型还不够，应同时检查实际输入输出的形状。\n\n```python\nchain = prompt | model | StrOutputParser()\n```\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-88beb29ce42d",
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象",
+            "start_line": 108,
+            "end_line": 111,
+            "content_hash": "9a232cf2e2761c1cbbc5a5763e40727ba8b20124dca05ded145042fa9e74bbe3",
+            "text": "## JSON 字符串与 JSON 对象\n\n字符串 '{\"answer\": 1}' 和字典 {\"answer\": 1} 是不同返回类型。若要求对象，可使用 json.loads 解析模型文本，再由 solve 返回字典。不要重复 json.dumps 导致双重编码。\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-8014deb939f7] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / StrOutputParser 输出\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=99-107\n## StrOutputParser 输出\n\nStrOutputParser 将兼容模型输出解析为文本，不负责把 JSON 字符串转为字典，也不自动提取文本中的业务字段。\n\n```python\nchain = prompt | model | StrOutputParser()\ntext = chain.invoke({\"text\": \"hello\"})\n```\n\n\n\n[K-ac547d345df5] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / LCEL 管道运算符\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=37-44\n## LCEL 管道运算符\n\nLCEL 使用 | 将 Runnable 或可适配对象组合。每一步输出成为下一步输入。只检查组件类型还不够，应同时检查实际输入输出的形状。\n\n```python\nchain = prompt | model | StrOutputParser()\n```\n\n\n\n[K-88beb29ce42d] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=108-111\n## JSON 字符串与 JSON 对象\n\n字符串 '{\"answer\": 1}' 和字典 {\"answer\": 1} 是不同返回类型。若要求对象，可使用 json.loads 解析模型文本，再由 solve 返回字典。不要重复 json.dumps 导致双重编码。\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q16",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "JSON 字符串如何转字典避免重复 dumps",
+        "query_hash": "f0d349598a2412260ab13ed09bed0bfff40a3c4e37330a710b77f8b14d3142ff",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c966a536494a6359b25a1d04dc4e4d31de369bf3c83d6422db8792b3e40255e8",
+            "child_ids": [
+              "5583aa9e2ffbb8b3f5b36d6a9d4f3caa86952c91ee7ca5f1074fab482abb88fa"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-88beb29ce42d",
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象",
+            "start_line": 108,
+            "end_line": 111,
+            "content_hash": "9a232cf2e2761c1cbbc5a5763e40727ba8b20124dca05ded145042fa9e74bbe3",
+            "text": "## JSON 字符串与 JSON 对象\n\n字符串 '{\"answer\": 1}' 和字典 {\"answer\": 1} 是不同返回类型。若要求对象，可使用 json.loads 解析模型文本，再由 solve 返回字典。不要重复 json.dumps 导致双重编码。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-196642115dfe",
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / batch 批量调用",
+            "start_line": 49,
+            "end_line": 52,
+            "content_hash": "6104252d54d226496746c49c0d726d3c2185f4b44ab271c7f7d3e082ec6c424c",
+            "text": "## batch 批量调用\n\nRunnable.batch 接收输入列表并返回输出列表。每个输入必须符合链入口协议。若需求只处理一个 payload，使用 invoke，避免无意把字典迭代为键。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-4c4d64b0d66c",
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnableLambda 字典输入",
+            "start_line": 61,
+            "end_line": 68,
+            "content_hash": "f2dbd66fe1c7afdb38d974805afdc580593eae15671597181fd02fcfd876fa5e",
+            "text": "## RunnableLambda 字典输入\n\n如果上游提供字典，lambda 应读取相应字段；不能直接对字典调用字符串方法。可先用一个步骤抽取字段，再交给字符串处理步骤。\n\n```python\nstep = RunnableLambda(lambda data: data[\"text\"].upper())\n```\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-88beb29ce42d] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=108-111\n## JSON 字符串与 JSON 对象\n\n字符串 '{\"answer\": 1}' 和字典 {\"answer\": 1} 是不同返回类型。若要求对象，可使用 json.loads 解析模型文本，再由 solve 返回字典。不要重复 json.dumps 导致双重编码。\n\n\n\n[K-196642115dfe] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / batch 批量调用\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=49-52\n## batch 批量调用\n\nRunnable.batch 接收输入列表并返回输出列表。每个输入必须符合链入口协议。若需求只处理一个 payload，使用 invoke，避免无意把字典迭代为键。\n\n\n\n[K-4c4d64b0d66c] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnableLambda 字典输入\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=61-68\n## RunnableLambda 字典输入\n\n如果上游提供字典，lambda 应读取相应字段；不能直接对字典调用字符串方法。可先用一个步骤抽取字段，再交给字符串处理步骤。\n\n```python\nstep = RunnableLambda(lambda data: data[\"text\"].upper())\n```\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q17",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "为什么只 print 不 return 导致输出为 null",
+        "query_hash": "05554402c16b514c1875e14a2c11e69a59196b9c381a25c0fd52927c4fd2fc43",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "02ac5fe953005137cb88e4d817f6a7ae6091d1edee829c80510f5c47ba532880",
+            "child_ids": [
+              "610f2e86ec32b0954f38f4c289c762326a436256ad20f007a129447892843fb8"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-f1bb18e7c070",
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 输出协议与调试打印",
+            "start_line": 112,
+            "end_line": 115,
+            "content_hash": "da5733773a26e6d97fd07eefa6ead9c892cd40604485465860def0bb3a45567f",
+            "text": "## 输出协议与调试打印\n\n沙箱 runner 负责将 solve 的返回值序列化，并把候选 print 重定向至 stderr。打印不是返回结果：只 print 不 return 会使返回值为 None，序列化为 null。过量调试输出仍可能触发输出限制。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-88beb29ce42d",
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象",
+            "start_line": 108,
+            "end_line": 111,
+            "content_hash": "9a232cf2e2761c1cbbc5a5763e40727ba8b20124dca05ded145042fa9e74bbe3",
+            "text": "## JSON 字符串与 JSON 对象\n\n字符串 '{\"answer\": 1}' 和字典 {\"answer\": 1} 是不同返回类型。若要求对象，可使用 json.loads 解析模型文本，再由 solve 返回字典。不要重复 json.dumps 导致双重编码。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-42db1ff7f09b",
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 导入路径",
+            "start_line": 116,
+            "end_line": 119,
+            "content_hash": "009891a69f4c65c2cd8812f837b51c20586f718cc4a375141cc3829ed90946ec",
+            "text": "## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-f1bb18e7c070] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 输出协议与调试打印\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=112-115\n## 输出协议与调试打印\n\n沙箱 runner 负责将 solve 的返回值序列化，并把候选 print 重定向至 stderr。打印不是返回结果：只 print 不 return 会使返回值为 None，序列化为 null。过量调试输出仍可能触发输出限制。\n\n\n\n[K-88beb29ce42d] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=108-111\n## JSON 字符串与 JSON 对象\n\n字符串 '{\"answer\": 1}' 和字典 {\"answer\": 1} 是不同返回类型。若要求对象，可使用 json.loads 解析模型文本，再由 solve 返回字典。不要重复 json.dumps 导致双重编码。\n\n\n\n[K-42db1ff7f09b] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 导入路径\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=116-119\n## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n\n",
+        "duration_ms": 15
+      }
+    },
+    {
+      "id": "q18",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "langchain_core 导入路径与 langchain 区别",
+        "query_hash": "7cff5a64da8ac2b9702c4a5cd1023653c3fb456f78a18cc43e174c28aae79e65",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "3e3f7caaa590c70e46d4f9517f73de1d5a71ba385637b86ab2403cebcb922145",
+            "child_ids": [
+              "8f81c8d741272a06ed6c097ca76b40ddfd69ba549d38b8941b23b24f43de0283"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-42db1ff7f09b",
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 导入路径",
+            "start_line": 116,
+            "end_line": 119,
+            "content_hash": "009891a69f4c65c2cd8812f837b51c20586f718cc4a375141cc3829ed90946ec",
+            "text": "## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-f6bdb72069fb",
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记",
+            "start_line": 1,
+            "end_line": 4,
+            "content_hash": "49ab1491c37c9b06f26e4b0bf6b3c3d36e421431eafd82a4f771acea334e136d",
+            "text": "# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-7ebfe38ea446",
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 离线响应",
+            "start_line": 86,
+            "end_line": 94,
+            "content_hash": "8e56cd6600986b479d90b884e20c3c2c982bb254bdfd9ea40b13386f45695166",
+            "text": "## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-42db1ff7f09b] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 导入路径\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=116-119\n## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n\n\n[K-f6bdb72069fb] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=1-4\n# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n\n\n[K-7ebfe38ea446] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 离线响应\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=86-94\n## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q19",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "候选沙箱为什么不能使用 ChatDeepSeek 访问网络",
+        "query_hash": "84492755d35399c67c1df1bbe36e98619eb550abfc0e65aa61a9f9870071d2ec",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "3e3f7caaa590c70e46d4f9517f73de1d5a71ba385637b86ab2403cebcb922145",
+            "child_ids": [
+              "8f81c8d741272a06ed6c097ca76b40ddfd69ba549d38b8941b23b24f43de0283"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "d549b4b88293450ca901e91b1df740f0f326b9094b464272eceb4244b01b1234",
+            "child_ids": [
+              "8ef7e473bb0d9031cd0d9ff193e9000662f80fbbb778576a1809e8ad7a78e219"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-3e3f7caaa590",
+            "parent_id": "3e3f7caaa590c70e46d4f9517f73de1d5a71ba385637b86ab2403cebcb922145",
+            "child_ids": [
+              "8f81c8d741272a06ed6c097ca76b40ddfd69ba549d38b8941b23b24f43de0283"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 禁网执行与模型客户端",
+            "start_line": 120,
+            "end_line": 123,
+            "content_hash": "d180526807b9b815f132ffff7b50ce2914a1c5e24a4869dac72ec6c1de828658",
+            "text": "## 禁网执行与模型客户端\n\n候选容器禁网且无模型密钥。不得在候选中初始化 ChatOpenAI 或 ChatDeepSeek 访问服务。宿主生成模型与候选内部的离线模拟模型是不同环节。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "8f81c8d741272a06ed6c097ca76b40ddfd69ba549d38b8941b23b24f43de0283": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-f1bb18e7c070",
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 输出协议与调试打印",
+            "start_line": 112,
+            "end_line": 115,
+            "content_hash": "da5733773a26e6d97fd07eefa6ead9c892cd40604485465860def0bb3a45567f",
+            "text": "## 输出协议与调试打印\n\n沙箱 runner 负责将 solve 的返回值序列化，并把候选 print 重定向至 stderr。打印不是返回结果：只 print 不 return 会使返回值为 None，序列化为 null。过量调试输出仍可能触发输出限制。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-c576344717db",
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 错误分类与验证",
+            "start_line": 124,
+            "end_line": 126,
+            "content_hash": "aed916e9fc73506b6753e666c40f20c01e63498b8d042f40f875a047b38d752f",
+            "text": "## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-3e3f7caaa590] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 禁网执行与模型客户端\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=120-123\n## 禁网执行与模型客户端\n\n候选容器禁网且无模型密钥。不得在候选中初始化 ChatOpenAI 或 ChatDeepSeek 访问服务。宿主生成模型与候选内部的离线模拟模型是不同环节。\n\n\n\n[K-f1bb18e7c070] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 输出协议与调试打印\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=112-115\n## 输出协议与调试打印\n\n沙箱 runner 负责将 solve 的返回值序列化，并把候选 print 重定向至 stderr。打印不是返回结果：只 print 不 return 会使返回值为 None，序列化为 null。过量调试输出仍可能触发输出限制。\n\n\n\n[K-c576344717db] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 错误分类与验证\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=124-126\n## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n\n",
+        "duration_ms": 14
+      }
+    },
+    {
+      "id": "q20",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "模板变量错误和数据形状错误怎样区分",
+        "query_hash": "1db19b80b889b72ae3e3e142cd7d9222c7256e8ec39e44c92ed8b95bb33350f7",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "02ac5fe953005137cb88e4d817f6a7ae6091d1edee829c80510f5c47ba532880",
+            "child_ids": [
+              "610f2e86ec32b0954f38f4c289c762326a436256ad20f007a129447892843fb8"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-c576344717db",
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 错误分类与验证",
+            "start_line": 124,
+            "end_line": 126,
+            "content_hash": "aed916e9fc73506b6753e666c40f20c01e63498b8d042f40f875a047b38d752f",
+            "text": "## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-d104788e44df",
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 多消息模板",
+            "start_line": 22,
+            "end_line": 32,
+            "content_hash": "8bb9128ceedb99c66736953bee3233230033058ff70e12730849fb75bdce38bb",
+            "text": "## 多消息模板\n\nChatPromptTemplate.from_messages 接受角色和模板的列表。用户数据通过变量传入；不要把候选执行权限写在用户消息里并期待其改变宿主限制。\n\n```python\nprompt = ChatPromptTemplate.from_messages([\n    (\"system\", \"Return a short answer.\"),\n    (\"human\", \"{text}\"),\n])\n```\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-a94227b0fde4",
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 模板变量与字面花括号",
+            "start_line": 14,
+            "end_line": 21,
+            "content_hash": "600d32c177d5991a1401fed8dc84691ce004e166ca9e8f4593c1bf283c60d740",
+            "text": "## 模板变量与字面花括号\n\n模板文本中的花括号可能被解释为变量。需要表达 JSON 字面对象时，对作为字面的花括号使用双花括号。只转义字面部分，保留需要替换的变量。\n\n```python\nprompt = ChatPromptTemplate.from_template('{{\"answer\": \"{text}\"}}')\n```\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-c576344717db] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 错误分类与验证\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=124-126\n## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n\n\n[K-d104788e44df] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 多消息模板\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=22-32\n## 多消息模板\n\nChatPromptTemplate.from_messages 接受角色和模板的列表。用户数据通过变量传入；不要把候选执行权限写在用户消息里并期待其改变宿主限制。\n\n```python\nprompt = ChatPromptTemplate.from_messages([\n    (\"system\", \"Return a short answer.\"),\n    (\"human\", \"{text}\"),\n])\n```\n\n\n\n[K-a94227b0fde4] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 模板变量与字面花括号\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=14-21\n## 模板变量与字面花括号\n\n模板文本中的花括号可能被解释为变量。需要表达 JSON 字面对象时，对作为字面的花括号使用双花括号。只转义字面部分，保留需要替换的变量。\n\n```python\nprompt = ChatPromptTemplate.from_template('{{\"answer\": \"{text}\"}}')\n```\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q25",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "RunnableParallel 分支输入 使用说明和示例",
+        "query_hash": "69f3d99712c58423428066211f567bf1e8414eff580b146ae29133f7675f2761",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-211d821df281",
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnableParallel 分支输入",
+            "start_line": 78,
+            "end_line": 81,
+            "content_hash": "16c0d7c938bfc1ee19d2a443b4f0b93910e368019de45fffb097bf983685e377",
+            "text": "## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-c576344717db",
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 错误分类与验证",
+            "start_line": 124,
+            "end_line": 126,
+            "content_hash": "aed916e9fc73506b6753e666c40f20c01e63498b8d042f40f875a047b38d752f",
+            "text": "## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-f6bdb72069fb",
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记",
+            "start_line": 1,
+            "end_line": 4,
+            "content_hash": "49ab1491c37c9b06f26e4b0bf6b3c3d36e421431eafd82a4f771acea334e136d",
+            "text": "# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-211d821df281] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnableParallel 分支输入\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=78-81\n## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n\n\n[K-c576344717db] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 错误分类与验证\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=124-126\n## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n\n\n[K-f6bdb72069fb] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=1-4\n# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n\n",
+        "duration_ms": 0
+      }
+    },
+    {
+      "id": "q26",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "FakeListLLM 离线响应 使用说明和示例",
+        "query_hash": "f56be152435219c8415a46c9544af4ea2dd74c593094f139558b9c5e44634509",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "4c4d64b0d66cb82e5451a9b393be3dfe17fbf55f294af337724d1896899366ee",
+            "child_ids": [
+              "1475d024c533b1b9019cabc1b04f95d670f9c1c85a6f9046896e96f38a412a57"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-7ebfe38ea446",
+            "parent_id": "7ebfe38ea446bb70a168319e600380aca0b3c3b89461d270b12fba8f4c5193e4",
+            "child_ids": [
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 离线响应",
+            "start_line": 86,
+            "end_line": 94,
+            "content_hash": "8e56cd6600986b479d90b884e20c3c2c982bb254bdfd9ea40b13386f45695166",
+            "text": "## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "d1ed3c3271c1da08556bfa93e1197084cfcbcf35bd7fc8b58efb8cde17e4bc7d": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-13a6d3e8c260",
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / FakeListLLM 与输入语义",
+            "start_line": 95,
+            "end_line": 98,
+            "content_hash": "6e9480e280f33200e4eb567372251eb4d8524d9b87d5d132d7982feddf3ae78e",
+            "text": "## FakeListLLM 与输入语义\n\nFakeListLLM 的返回取决于 responses 配置，不会根据提示词真实推理。若任务要求返回 payload.response，应由任务输入构造相应 responses，不能期待修改 prompt 就改变固定回答。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-f6bdb72069fb",
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记",
+            "start_line": 1,
+            "end_line": 4,
+            "content_hash": "49ab1491c37c9b06f26e4b0bf6b3c3d36e421431eafd82a4f771acea334e136d",
+            "text": "# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-7ebfe38ea446] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 离线响应\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=86-94\n## FakeListLLM 离线响应\n\nFakeListLLM 用预先提供的 responses 模拟模型返回，不会访问外部服务。它适合验证链的数据流，不代表真实模型会遵循 prompt 内容。\n\n```python\nfrom langchain_core.language_models.fake import FakeListLLM\nmodel = FakeListLLM(responses=[\"OK\"])\n```\n\n\n\n[K-13a6d3e8c260] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / FakeListLLM 与输入语义\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=95-98\n## FakeListLLM 与输入语义\n\nFakeListLLM 的返回取决于 responses 配置，不会根据提示词真实推理。若任务要求返回 payload.response，应由任务输入构造相应 responses，不能期待修改 prompt 就改变固定回答。\n\n\n\n[K-f6bdb72069fb] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=1-4\n# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n\n",
+        "duration_ms": 16
+      }
+    },
+    {
+      "id": "q27",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "StrOutputParser 输出 使用说明和示例",
+        "query_hash": "a3330a2e96e74ba8b862c030470de0370c02a0dce0963e183da36674b080b555",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "f1bb18e7c070716d4121eb5e49e7987247b939552339209d96689838447fe704",
+            "child_ids": [
+              "af8dd81b556cf5d16d70622c4a41a692c736e3c71806ebb2f5c64c2ccb27ec91"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-8014deb939f7",
+            "parent_id": "8014deb939f7da360cb0fa151878ddde89d40f17149ae6878d17cf5b27e73620",
+            "child_ids": [
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / StrOutputParser 输出",
+            "start_line": 99,
+            "end_line": 107,
+            "content_hash": "fdf50f00f2018360f5b98433073ef6a02f19de31ff35e3c67bed9ab0f48e2562",
+            "text": "## StrOutputParser 输出\n\nStrOutputParser 将兼容模型输出解析为文本，不负责把 JSON 字符串转为字典，也不自动提取文本中的业务字段。\n\n```python\nchain = prompt | model | StrOutputParser()\ntext = chain.invoke({\"text\": \"hello\"})\n```\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "36b460532ec92b5bbc56c8272ac6575695076e48e37829e813718f5be6e8b4b4": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-ac547d345df5",
+            "parent_id": "ac547d345df50850b02f76f6b7b7e43821874c063dc59fd29009a23b2aa6c884",
+            "child_ids": [
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / LCEL 管道运算符",
+            "start_line": 37,
+            "end_line": 44,
+            "content_hash": "19b486ab8d9849ddc840113449c0c97c0548f2c41c5755318ebccba4f72da502",
+            "text": "## LCEL 管道运算符\n\nLCEL 使用 | 将 Runnable 或可适配对象组合。每一步输出成为下一步输入。只检查组件类型还不够，应同时检查实际输入输出的形状。\n\n```python\nchain = prompt | model | StrOutputParser()\n```\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "d7bf58731c481ee71ac64530f8b44f48c4f617fa378a5c269657143d23742bbe": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-42db1ff7f09b",
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 导入路径",
+            "start_line": 116,
+            "end_line": 119,
+            "content_hash": "009891a69f4c65c2cd8812f837b51c20586f718cc4a375141cc3829ed90946ec",
+            "text": "## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-8014deb939f7] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / StrOutputParser 输出\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=99-107\n## StrOutputParser 输出\n\nStrOutputParser 将兼容模型输出解析为文本，不负责把 JSON 字符串转为字典，也不自动提取文本中的业务字段。\n\n```python\nchain = prompt | model | StrOutputParser()\ntext = chain.invoke({\"text\": \"hello\"})\n```\n\n\n\n[K-ac547d345df5] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / LCEL 管道运算符\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=37-44\n## LCEL 管道运算符\n\nLCEL 使用 | 将 Runnable 或可适配对象组合。每一步输出成为下一步输入。只检查组件类型还不够，应同时检查实际输入输出的形状。\n\n```python\nchain = prompt | model | StrOutputParser()\n```\n\n\n\n[K-42db1ff7f09b] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 导入路径\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=116-119\n## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n\n",
+        "duration_ms": 15
+      }
+    },
+    {
+      "id": "q28",
+      "metrics": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "false_evidence": null
+      },
+      "retrieval": {
+        "query": "导入路径 使用说明和示例",
+        "query_hash": "31550c8333ada178d8777b541cf93bfce7f3221d405ba0797aa9dafd2c0a1382",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "88beb29ce42db7cadfd2320ae4140ef532681f0c5160006633505c4e22f51033",
+            "child_ids": [
+              "48e2b4b8ef38843c5fd132ccce22b040b713a9a8ea9911c571b539f12df9762e"
+            ],
+            "rrf_score": 0.015625
+          },
+          {
+            "parent_id": "c0e683ff366d0784d5eefd2c0643e188c692810cdb648870e41b9c90bd93395b",
+            "child_ids": [
+              "bd9809ed1bc6bf16e21de16ec5b5da79d5255bead8e5e07671f9e95ab4049d0f"
+            ],
+            "rrf_score": 0.015384615384615385
+          },
+          {
+            "parent_id": "13a6d3e8c260fdecd5d764812c923ae740fde3ae529f747f0b5b44cf0f3f5e41",
+            "child_ids": [
+              "4587573958740ced849868add494fab651b65012e0de6ddcfbfc03bc8d82fcd9"
+            ],
+            "rrf_score": 0.015151515151515152
+          },
+          {
+            "parent_id": "ffa915177d66914a0da213679801195c56563bb7792ab03598bb0373077e4113",
+            "child_ids": [
+              "3a4d8c81afcdbe01f23a51a38de0162700ee6da8d52fa8dce0e2d97fd4e3de9b"
+            ],
+            "rrf_score": 0.014925373134328358
+          },
+          {
+            "parent_id": "d104788e44df915700b7b4546282624b02a29d645dcc907e31ad576872baa3f8",
+            "child_ids": [
+              "a32952b48fc1ac11f90c2c571aa410b9955eb4a6e36fb488d87302be6d5294cb"
+            ],
+            "rrf_score": 0.014705882352941176
+          },
+          {
+            "parent_id": "196642115dfe7ef121fd6c9cfb390d231e1aa6d563164469dea3e2f1ce311702",
+            "child_ids": [
+              "107f4071a339e43d7f8ad69c0ec32d8aae140eb8429902619f776a7eb011c7db"
+            ],
+            "rrf_score": 0.014492753623188406
+          },
+          {
+            "parent_id": "d549b4b88293450ca901e91b1df740f0f326b9094b464272eceb4244b01b1234",
+            "child_ids": [
+              "8ef7e473bb0d9031cd0d9ff193e9000662f80fbbb778576a1809e8ad7a78e219"
+            ],
+            "rrf_score": 0.014285714285714285
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-42db1ff7f09b",
+            "parent_id": "42db1ff7f09bf0340df37444c08e15b0c829d7a870a538336e9d22cec8a2adec",
+            "child_ids": [
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 导入路径",
+            "start_line": 116,
+            "end_line": 119,
+            "content_hash": "009891a69f4c65c2cd8812f837b51c20586f718cc4a375141cc3829ed90946ec",
+            "text": "## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0c0f1869a15b755f63fff2d78c3c3286d10894c8bfd395f2076859c158967e5a": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-f6bdb72069fb",
+            "parent_id": "f6bdb72069fb9a81e6e55bc1309799d5000fbbd9a4ab9c6667aea1c88134fb54",
+            "child_ids": [
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记",
+            "start_line": 1,
+            "end_line": 4,
+            "content_hash": "49ab1491c37c9b06f26e4b0bf6b3c3d36e421431eafd82a4f771acea334e136d",
+            "text": "# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "3f8ef312430812e2788c52969b038ebd1a971001a0117f04cb55423de16fa4d6": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-c576344717db",
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 错误分类与验证",
+            "start_line": 124,
+            "end_line": 126,
+            "content_hash": "aed916e9fc73506b6753e666c40f20c01e63498b8d042f40f875a047b38d752f",
+            "text": "## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-42db1ff7f09b] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 导入路径\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=116-119\n## 导入路径\n\n本镜像使用 langchain_core。ChatPromptTemplate 位于 langchain_core.prompts，StrOutputParser 位于 langchain_core.output_parsers，RunnableLambda 位于 langchain_core.runnables。不要替换为镜像未安装的顶层 langchain 包。\n\n\n\n[K-f6bdb72069fb] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=1-4\n# 离线 LCEL 使用笔记\n\n本笔记由项目维护，针对沙箱锁定的 langchain-core 1.6.6；不是官方文档的完整复制。示例仅使用离线组件。来源为已安装包的公开接口和项目离线执行协议。\n\n\n\n[K-c576344717db] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 错误分类与验证\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=124-126\n## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n\n",
+        "duration_ms": 0
+      }
+    },
+    {
+      "id": "q30",
+      "metrics": {
+        "false_evidence": true,
+        "recall": null,
+        "mrr": null,
+        "ndcg": null
+      },
+      "retrieval": {
+        "query": "MySQL InnoDB 索引页分裂 redo binlog",
+        "query_hash": "e16502c57ed7c86e11518611d43e069cefb7c4accbcded6f2614d86ebb41836e",
+        "snapshot_id": "759009843fa6b6a09f30b393c977292a7ddf322f4ae5de83a75f9853deca0fb4",
+        "library_version": "1.6.6",
+        "requested_mode": "bm25",
+        "mode": "bm25",
+        "fallback": [],
+        "usage": [],
+        "candidates": [
+          {
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "rrf_score": 0.01639344262295082
+          },
+          {
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "rrf_score": 0.016129032258064516
+          },
+          {
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "rrf_score": 0.015873015873015872
+          },
+          {
+            "parent_id": "a94227b0fde49f0422b659ea25199e5a86f31a193ebf78aa233ee1adbb936eeb",
+            "child_ids": [
+              "74c294b4fbdb666632c047e5f45dc72215bc246d3c6b398c25238300a980f23e"
+            ],
+            "rrf_score": 0.015625
+          }
+        ],
+        "evidence": [
+          {
+            "id": "K-e3db07f1af0d",
+            "parent_id": "e3db07f1af0db79bd6c023fc8e9ef7424ee48c2b28fab879a2df67160cd73822",
+            "child_ids": [
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnablePassthrough 保留值",
+            "start_line": 82,
+            "end_line": 85,
+            "content_hash": "e22f1a30d918f29d636f3cbfcda46750a32e160854496b592ff76e430b3460f9",
+            "text": "## RunnablePassthrough 保留值\n\nRunnablePassthrough 将输入传递下去。输入为字典时可在后续映射中保留已有字段；不要假定一个普通字符串已经包含可索引的命名字段。\n\n",
+            "score": 0.01639344262295082,
+            "score_type": "rrf",
+            "child_ranks": {
+              "c344ce618096c3e44b12c4e9dffb7a1ab0576d5d610459020f7febcb5ce31e71": {
+                "bm25": 1,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-211d821df281",
+            "parent_id": "211d821df281173ca83fb1973615642276998e5af37e59f2784adcab7a218d08",
+            "child_ids": [
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / RunnableParallel 分支输入",
+            "start_line": 78,
+            "end_line": 81,
+            "content_hash": "16c0d7c938bfc1ee19d2a443b4f0b93910e368019de45fffb097bf983685e377",
+            "text": "## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n",
+            "score": 0.016129032258064516,
+            "score_type": "rrf",
+            "child_ranks": {
+              "38d1c67222e64b2a8bbfdc0cc8807cf34f2d80b904f456c0a9a223b3c38f7a78": {
+                "bm25": 2,
+                "dense": null
+              }
+            }
+          },
+          {
+            "id": "K-c576344717db",
+            "parent_id": "c576344717db9539284b09accb423d60a63c814025aa9b9a4bdfa66f98957da4",
+            "child_ids": [
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168"
+            ],
+            "version_id": "47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141",
+            "source_uri": "project://knowledge/lcel-offline-notes",
+            "title": "离线 LCEL 使用笔记",
+            "heading": "离线 LCEL 使用笔记 / 错误分类与验证",
+            "start_line": 124,
+            "end_line": 126,
+            "content_hash": "aed916e9fc73506b6753e666c40f20c01e63498b8d042f40f875a047b38d752f",
+            "text": "## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n",
+            "score": 0.015873015873015872,
+            "score_type": "rrf",
+            "child_ranks": {
+              "0d3ba11d4872015343affa34f5a5a7b2545ff76a0348928689975ead5981f168": {
+                "bm25": 3,
+                "dense": null
+              }
+            }
+          }
+        ],
+        "context": "[K-e3db07f1af0d] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnablePassthrough 保留值\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=82-85\n## RunnablePassthrough 保留值\n\nRunnablePassthrough 将输入传递下去。输入为字典时可在后续映射中保留已有字段；不要假定一个普通字符串已经包含可索引的命名字段。\n\n\n\n[K-211d821df281] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / RunnableParallel 分支输入\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=78-81\n## RunnableParallel 分支输入\n\nRunnableParallel 的各分支接收相同的原始输入，返回以分支名称为键的字典。不是前一个分支输出传给后一个分支，串行依赖应使用管道。\n\n\n\n[K-c576344717db] 离线 LCEL 使用笔记 / 离线 LCEL 使用笔记 / 错误分类与验证\nsource=project://knowledge/lcel-offline-notes version=47ef566b47cbf3dbab05d552f2ab5321a14c0722c00145d79234402c39c57141 lines=124-126\n## 错误分类与验证\n\n缺少模板变量属于输入协议问题；对错误类型对象调用方法属于数据形状问题；未安装模块属于环境兼容问题。文档只能帮助定位，候选修改后仍需可信用例验收；静态检查通过不证明功能正确。\n\n",
+        "duration_ms": 16
+      }
+    }
+  ]
+}

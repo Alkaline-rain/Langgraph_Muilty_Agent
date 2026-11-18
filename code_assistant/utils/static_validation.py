@@ -1,7 +1,7 @@
 """统一预检。AST 规则仅缩小任务范围，Docker 才是执行隔离边界。"""
 import ast
 
-from schemas.models import ExecutionResult
+from code_assistant.schemas.models import ExecutionResult
 
 ALLOWED_MODULES = frozenset({
     "math", "json", "re", "collections", "itertools", "functools",

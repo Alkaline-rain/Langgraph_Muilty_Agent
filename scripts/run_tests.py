@@ -12,7 +12,7 @@ import unittest
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "code_assistant"))
+sys.path.insert(0, str(ROOT))
 
 
 class RecordedResult(unittest.TextTestResult):

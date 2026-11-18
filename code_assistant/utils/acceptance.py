@@ -3,9 +3,9 @@ import json
 import time
 from collections.abc import Callable
 
-from schemas.models import AcceptanceResult, CaseResult, ExecutionResult, TaskSpec
-from utils.sandbox import execute_code
-from utils.static_validation import validate_code
+from code_assistant.schemas.models import AcceptanceResult, CaseResult, ExecutionResult, TaskSpec
+from code_assistant.utils.sandbox import execute_code
+from code_assistant.utils.static_validation import validate_code
 
 
 def _reject_constant(value):

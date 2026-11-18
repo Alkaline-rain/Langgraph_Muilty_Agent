@@ -1,5 +1,13 @@
 # LangGraph 代码生成与可信验收修复
 
+2026-10-20 新增领域文档 RAG：父子分块、BM25 / Dense、RRF、父块重排、知识快照与检索 Skill。
+已提供本地 LCEL 笔记，默认不调用外部 embedding / rerank；真实效果提升尚未实测。
+安装、入库、配置和设计取舍见 [RAG 升级指南](docs/RAG_UPGRADE.md)。
+
+新增 v2 平台：规划与工具动作、内置 Skill、持久化 checkpoint、跨任务经验、FastAPI / Worker、
+React 工作台和 MV3 浏览器插件。安装、启动及功能边界见 [平台指南](docs/PLATFORM.md)。
+下文保留原版 CLI 与四策略评测说明；v2 的真实模型效果需独立验收。
+
 求职材料：[最新简历项目经历与完成情况](docs/简历项目经历.md)、
 [项目知识与 45 个面试问答](docs/项目知识与面试问答.md)。材料区分工程验证与尚未完成的真实模型效果实验。
 

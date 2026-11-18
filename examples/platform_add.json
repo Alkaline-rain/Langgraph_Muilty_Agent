@@ -1,0 +1,10 @@
+{
+  "goal": "实现 solve(payload)，返回 payload.a 与 payload.b 之和",
+  "code": "def solve(payload):\n    return payload['a'] - payload['b']\n",
+  "mode": "verified_repair",
+  "entrypoint": "solve",
+  "cases": [
+    {"name": "positive", "input": {"a": 2, "b": 3}, "expected": 5},
+    {"name": "negative", "input": {"a": -4, "b": 1}, "expected": -3}
+  ]
+}

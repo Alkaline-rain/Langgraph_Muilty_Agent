@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="panel.css"/><title>Code Atlas</title></head><body>
+<header><span>CODE ATLAS</span><h1>把代码交给证据。</h1><p>选择 · 诊断 · 验证 · 修复</p></header>
+<details><summary>连接本地服务</summary><label>后端地址<input id="endpoint" value="http://127.0.0.1:8000"/></label><label>平台令牌<input id="token" type="password"/></label><button id="save">保存连接</button><small>令牌仅在当前浏览器会话保留。</small></details>
+<button id="scan">提取当前页面代码</button><p id="source"></p><label>选择代码块<select id="blocks"><option>也可直接粘贴代码</option></select></label>
+<label>待提交代码<textarea id="code" rows="10" placeholder="粘贴单文件 Python 代码"></textarea></label>
+<label>任务目标<textarea id="goal" rows="2" placeholder="说明代码应完成什么任务"></textarea></label>
+<label>处理模式<select id="mode"><option value="diagnose">静态诊断（不证明功能正确）</option><option value="verified_repair">可信验收与修复</option></select></label>
+<label><input id="entry" type="checkbox"/> 已确认 solve(payload) 入口</label>
+<label>人工可信用例 JSON<textarea id="cases" rows="3" placeholder='[{"name":"case1","input":{},"expected":0}]'></textarea></label>
+<button id="submit" class="primary">预览内容无误，提交任务</button><p class="hint">只提交这里的代码、目标和用例，不上传整个聊天记录。后端模型调用可能产生费用。</p>
+<section><h2>处理结果</h2><p id="status">尚未提交</p><button id="refresh">刷新结果</button><button id="cancel">取消任务</button><button id="resume">补充用例并继续</button><pre id="result"></pre><label>最新候选<textarea id="candidate" rows="8" readonly></textarea></label><button id="copy">复制代码</button><button id="download">下载代码</button></section>
+<p id="error" role="alert"></p><script src="panel.js"></script></body></html>

@@ -3,12 +3,12 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "code_assistant"))
+sys.path.insert(0, str(ROOT))
 
-from main import build_graph, initial_state
-from schemas.models import TaskSpec, CodeSolution, ReviewResult, ReflectionResult
-from utils.docker_sandbox import DockerSandbox
-from utils.run_store import RunStore, run_recorded
+from code_assistant.main import build_graph, initial_state
+from code_assistant.schemas.models import TaskSpec, CodeSolution, ReviewResult, ReflectionResult
+from code_assistant.utils.docker_sandbox import DockerSandbox
+from code_assistant.utils.run_store import RunStore, run_recorded
 
 
 def main():

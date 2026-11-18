@@ -8,8 +8,8 @@ import time
 import uuid
 from pathlib import Path
 
-from schemas.models import ExecutionResult
-from utils.static_validation import validate_code
+from code_assistant.schemas.models import ExecutionResult
+from code_assistant.utils.static_validation import validate_code
 
 MAX_OUTPUT = 64 * 1024
 MAX_INPUT = 64 * 1024
@@ -34,7 +34,7 @@ def find_docker():
     return None
 
 
-def run_bounded(cmd, input_bytes, timeout):
+def run_bounded(cmd, input_bytes, timeout, cancelled=None):
     """持续排空两条管道，单管道最多保留 64 KiB，超限立即终止 CLI。"""
     with tempfile.TemporaryFile() as source:
         source.write(input_bytes)
@@ -61,6 +61,9 @@ def run_bounded(cmd, input_bytes, timeout):
             reason = ""
             try:
                 while proc.poll() is None:
+                    if cancelled and cancelled():
+                        reason = "cancelled"
+                        break
                     if exceeded.wait(0.02):
                         reason = "output_limit"
                         break
@@ -114,7 +117,9 @@ class DockerSandbox:
         except (OSError, subprocess.SubprocessError):
             return None
 
-    def execute(self, imports, code, timeout=10, memory="256m", cpus="0.5", pids=64, *, stdin="null"):
+    def execute(self, imports, code, timeout=10, memory="256m", cpus="0.5", pids=64, *, stdin="null", cancelled=None):
+        if cancelled and cancelled():
+            return ExecutionResult(success=False, error_type="cancelled", error_message="任务已取消")
         validation = validate_code(imports, code)
         if not validation.success:
             return validation
@@ -145,12 +150,13 @@ class DockerSandbox:
                    "-v", f"{Path(workdir).as_posix()}:/code:ro", "-w", "/code", self.image,
                    "timeout", "--kill-after=1", str(timeout), "python", "-I", "/opt/runner.py"]
             try:
-                rc, out, err, reason = run_bounded(cmd, data, timeout + 5)
+                rc, out, err, reason = (run_bounded(cmd, data, timeout + 5, cancelled=cancelled)
+                                       if cancelled else run_bounded(cmd, data, timeout + 5))
                 elapsed = int((time.monotonic() - start) * 1000)
                 if reason:
                     result = ExecutionResult(success=False,
-                        error_type="timeout_error" if reason == "timeout" else "resource_error",
-                        error_message="执行超时" if reason == "timeout" else "输出超过 64 KiB 限制",
+                        error_type={"timeout": "timeout_error", "cancelled": "cancelled"}.get(reason, "resource_error"),
+                        error_message={"timeout": "执行超时", "cancelled": "任务已取消"}.get(reason, "输出超过 64 KiB 限制"),
                         duration_ms=elapsed)
                 else:
                     result = self._classify(rc, out, err, elapsed)
@@ -166,10 +172,20 @@ class DockerSandbox:
     @staticmethod
     def _cleanup(name):
         try:
-            proc = subprocess.run([find_docker() or "docker", "rm", "-f", name], capture_output=True,
-                                  text=True, encoding="utf-8", errors="replace", timeout=10)
-            if proc.returncode and "No such container" not in proc.stderr:
-                return proc.stderr[-1000:]
+            deadline = time.monotonic() + 10
+            # --rm and explicit cleanup can race; wait for confirmed removal, never
+            # interpret "removal already in progress" as either success or permanent failure.
+            while True:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    return "容器删除未在 10 秒内确认"
+                proc = subprocess.run([find_docker() or "docker", "rm", "-f", name], capture_output=True,
+                                      text=True, encoding="utf-8", errors="replace", timeout=remaining)
+                if proc.returncode == 0 or "No such container" in proc.stderr:
+                    return ""
+                if "already in progress" not in proc.stderr.lower():
+                    return proc.stderr[-1000:]
+                time.sleep(min(0.1, max(0, deadline - time.monotonic())))
         except (OSError, subprocess.SubprocessError) as exc:
             return str(exc)
         return ""

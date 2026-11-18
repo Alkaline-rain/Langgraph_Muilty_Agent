@@ -1,3 +1,7 @@
+if __package__ in (None, ""):
+    from _entry import bootstrap
+    bootstrap()
+
 """固定任务集的配对对照实验。simulate 仅检查实验管线，live 才测真实模型。"""
 import argparse
 from collections import Counter
@@ -12,14 +16,14 @@ import statistics
 import time
 import uuid
 
-from config import MODEL_NAME
-from main import build_graph, initial_state
-from schemas.models import TaskSpec, CodeSolution, RunConfig, AcceptanceResult, ReviewResult, ReflectionResult
-from utils.acceptance import evaluate
-from utils.docker_sandbox import DockerSandbox
-from utils.static_validation import validate_code
-from utils.run_store import RunStore, run_recorded
-from utils.trace import atomic_json
+from code_assistant.config import MODEL_NAME
+from code_assistant.main import build_graph, initial_state
+from code_assistant.schemas.models import TaskSpec, CodeSolution, RunConfig, AcceptanceResult, ReviewResult, ReflectionResult
+from code_assistant.utils.acceptance import evaluate
+from code_assistant.utils.docker_sandbox import DockerSandbox
+from code_assistant.utils.static_validation import validate_code
+from code_assistant.utils.run_store import RunStore, run_recorded
+from code_assistant.utils.trace import atomic_json
 
 ROOT = Path(__file__).resolve().parents[1]
 STRATEGIES = ("single", "direct", "full", "adaptive")

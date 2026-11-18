@@ -15,7 +15,7 @@ import os
 from pathlib import Path
 from datetime import datetime, timezone
 
-from schemas.models import TraceEvent
+from code_assistant.schemas.models import TraceEvent
 
 
 def new_event(kind: str, node: str, status: str, **detail) -> dict:

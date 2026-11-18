@@ -1,0 +1,157 @@
+{
+  "label_status": "small seed suite; references excluded from prompts and knowledge ingestion",
+  "tasks": [
+    {
+      "id": "missing_variable",
+      "goal": "通过 LCEL prompt | FakeListLLM | StrOutputParser 返回 payload.response，prompt 变量为 text。",
+      "code": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    p=ChatPromptTemplate.from_template('{text}')\n    return (p | FakeListLLM(responses=[payload['response']]) | StrOutputParser()).invoke({'question': payload['text']})\n",
+      "cases": [
+        {
+          "name": "development",
+          "input": {
+            "text": "hi",
+            "response": "OK"
+          },
+          "expected": "OK"
+        }
+      ],
+      "holdout_cases": [
+        {
+          "name": "holdout",
+          "input": {
+            "text": "new",
+            "response": "NEXT"
+          },
+          "expected": "NEXT"
+        }
+      ],
+      "reference": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    p=ChatPromptTemplate.from_template('{text}')\n    return (p | FakeListLLM(responses=[payload['response']]) | StrOutputParser()).invoke({'text': payload['text']})\n"
+    },
+    {
+      "id": "lambda_shape",
+      "goal": "用 RunnableLambda 返回 payload.text 的大写字符串。",
+      "code": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return RunnableLambda(lambda x:x.upper()).invoke(payload)\n",
+      "cases": [
+        {
+          "name": "development",
+          "input": {
+            "text": "hi"
+          },
+          "expected": "HI"
+        }
+      ],
+      "holdout_cases": [
+        {
+          "name": "holdout",
+          "input": {
+            "text": "mixed Case"
+          },
+          "expected": "MIXED CASE"
+        }
+      ],
+      "reference": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return RunnableLambda(lambda x:x['text'].upper()).invoke(payload)\n"
+    },
+    {
+      "id": "wrong_import",
+      "goal": "用 RunnableLambda 返回 payload.text 的大写字符串。",
+      "code": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    from langchain.runnables import RunnableLambda\n    return RunnableLambda(lambda x:x['text'].upper()).invoke(payload)\n",
+      "cases": [
+        {
+          "name": "development",
+          "input": {
+            "text": "abc"
+          },
+          "expected": "ABC"
+        }
+      ],
+      "holdout_cases": [
+        {
+          "name": "holdout",
+          "input": {
+            "text": "xy z"
+          },
+          "expected": "XY Z"
+        }
+      ],
+      "reference": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return RunnableLambda(lambda x:x['text'].upper()).invoke(payload)\n"
+    },
+    {
+      "id": "fake_response",
+      "goal": "通过 prompt | FakeListLLM | StrOutputParser 返回 payload.response。",
+      "code": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return (ChatPromptTemplate.from_template('{text}') | FakeListLLM(responses=['constant']) | StrOutputParser()).invoke({'text':payload['text']})\n",
+      "cases": [
+        {
+          "name": "development",
+          "input": {
+            "text": "hi",
+            "response": "A"
+          },
+          "expected": "A"
+        }
+      ],
+      "holdout_cases": [
+        {
+          "name": "holdout",
+          "input": {
+            "text": "bye",
+            "response": "B"
+          },
+          "expected": "B"
+        }
+      ],
+      "reference": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return (ChatPromptTemplate.from_template('{text}') | FakeListLLM(responses=[payload['response']]) | StrOutputParser()).invoke({'text':payload['text']})\n"
+    },
+    {
+      "id": "json_decode",
+      "goal": "使用离线 FakeListLLM 返回 payload.response JSON 文本，再解析为字典返回。",
+      "code": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return FakeListLLM(responses=[payload['response']]).invoke('parse')\n",
+      "cases": [
+        {
+          "name": "development",
+          "input": {
+            "response": "{\"answer\":1}"
+          },
+          "expected": {
+            "answer": 1
+          }
+        }
+      ],
+      "holdout_cases": [
+        {
+          "name": "holdout",
+          "input": {
+            "response": "{\"answer\":2}"
+          },
+          "expected": {
+            "answer": 2
+          }
+        }
+      ],
+      "reference": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    import json\n    return json.loads(FakeListLLM(responses=[payload['response']]).invoke('parse'))\n"
+    },
+    {
+      "id": "print_instead_of_return",
+      "goal": "用 RunnableLambda 返回 payload.text 的大写字符串，不输出其他内容。",
+      "code": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    print(RunnableLambda(lambda x:x['text'].upper()).invoke(payload))\n",
+      "cases": [
+        {
+          "name": "development",
+          "input": {
+            "text": "ok"
+          },
+          "expected": "OK"
+        }
+      ],
+      "holdout_cases": [
+        {
+          "name": "holdout",
+          "input": {
+            "text": "next"
+          },
+          "expected": "NEXT"
+        }
+      ],
+      "reference": "from langchain_core.prompts import ChatPromptTemplate\nfrom langchain_core.language_models.fake import FakeListLLM\nfrom langchain_core.output_parsers import StrOutputParser\nfrom langchain_core.runnables import RunnableLambda\n\ndef solve(payload):\n    return RunnableLambda(lambda x:x['text'].upper()).invoke(payload)\n"
+    }
+  ]
+}

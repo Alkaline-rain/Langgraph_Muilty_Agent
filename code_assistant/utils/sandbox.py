@@ -1,8 +1,8 @@
 """不可信代码只进入 Docker；auto 不再允许降级。"""
 import os
-from schemas.models import ExecutionResult
-from utils.docker_sandbox import DockerSandbox
-from utils.static_validation import validate_code
+from code_assistant.schemas.models import ExecutionResult
+from code_assistant.utils.docker_sandbox import DockerSandbox
+from code_assistant.utils.static_validation import validate_code
 
 
 def execute_code(imports: str, code: str, timeout: int = 10,

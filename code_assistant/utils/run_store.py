@@ -9,8 +9,8 @@ import platform
 import time
 import uuid
 
-from config import MODEL_NAME
-from utils.trace import atomic_json, snapshot, record_node, record_route
+from code_assistant.config import MODEL_NAME
+from code_assistant.utils.trace import atomic_json, snapshot, record_node, record_route
 
 ROOT = Path(__file__).resolve().parents[2]
 

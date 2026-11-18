@@ -1,0 +1,271 @@
+{
+  "label_status": "project-authored seed labels; not independently reviewed; do not claim generalization",
+  "queries": [
+    {
+      "id": "q01",
+      "family": "api-1",
+      "split": "dev",
+      "query": "ChatPromptTemplate 输入字典缺少 text 键怎么办",
+      "relevant": [
+        "离线 LCEL 使用笔记 / ChatPromptTemplate 字典输入"
+      ]
+    },
+    {
+      "id": "q02",
+      "family": "api-2",
+      "split": "dev",
+      "query": "如何在 prompt 模板中保留 JSON 花括号",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 模板变量与字面花括号"
+      ]
+    },
+    {
+      "id": "q03",
+      "family": "api-3",
+      "split": "dev",
+      "query": "如何用 from_messages 设置 system human 消息",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 多消息模板"
+      ]
+    },
+    {
+      "id": "q04",
+      "family": "api-4",
+      "split": "dev",
+      "query": "PromptValue 为什么不能 JSON 序列化",
+      "relevant": [
+        "离线 LCEL 使用笔记 / PromptValue 不是普通字符串"
+      ]
+    },
+    {
+      "id": "q05",
+      "family": "api-5",
+      "split": "dev",
+      "query": "LCEL 管道如何连接 prompt model parser",
+      "relevant": [
+        "离线 LCEL 使用笔记 / LCEL 管道运算符"
+      ]
+    },
+    {
+      "id": "q06",
+      "family": "api-6",
+      "split": "dev",
+      "query": "同步 solve 如何调用 invoke 避免返回 coroutine",
+      "relevant": [
+        "离线 LCEL 使用笔记 / invoke 同步调用"
+      ]
+    },
+    {
+      "id": "q07",
+      "family": "api-7",
+      "split": "dev",
+      "query": "batch 接收字典还是输入列表",
+      "relevant": [
+        "离线 LCEL 使用笔记 / batch 批量调用"
+      ]
+    },
+    {
+      "id": "q08",
+      "family": "api-8",
+      "split": "dev",
+      "query": "RunnableLambda 应该传函数还是函数返回值",
+      "relevant": [
+        "离线 LCEL 使用笔记 / RunnableLambda 包装函数"
+      ]
+    },
+    {
+      "id": "q09",
+      "family": "api-9",
+      "split": "dev",
+      "query": "RunnableLambda 如何从字典抽取 text",
+      "relevant": [
+        "离线 LCEL 使用笔记 / RunnableLambda 字典输入"
+      ]
+    },
+    {
+      "id": "q10",
+      "family": "api-10",
+      "split": "dev",
+      "query": "payload question 如何映射到 prompt text",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 链中的输入映射"
+      ]
+    },
+    {
+      "id": "q11",
+      "family": "api-11",
+      "split": "test",
+      "query": "RunnableParallel 各分支接收什么输入",
+      "relevant": [
+        "离线 LCEL 使用笔记 / RunnableParallel 分支输入"
+      ]
+    },
+    {
+      "id": "q12",
+      "family": "api-12",
+      "split": "test",
+      "query": "如何使用 RunnablePassthrough 保留原始值",
+      "relevant": [
+        "离线 LCEL 使用笔记 / RunnablePassthrough 保留值"
+      ]
+    },
+    {
+      "id": "q13",
+      "family": "api-13",
+      "split": "test",
+      "query": "FakeListLLM 从哪里导入如何提供 responses",
+      "relevant": [
+        "离线 LCEL 使用笔记 / FakeListLLM 离线响应"
+      ]
+    },
+    {
+      "id": "q14",
+      "family": "api-14",
+      "split": "test",
+      "query": "为什么改 prompt 不改变 FakeListLLM 固定回答",
+      "relevant": [
+        "离线 LCEL 使用笔记 / FakeListLLM 与输入语义"
+      ]
+    },
+    {
+      "id": "q15",
+      "family": "api-15",
+      "split": "test",
+      "query": "StrOutputParser 是否把 JSON 字符串变成对象",
+      "relevant": [
+        "离线 LCEL 使用笔记 / StrOutputParser 输出"
+      ]
+    },
+    {
+      "id": "q16",
+      "family": "api-16",
+      "split": "test",
+      "query": "JSON 字符串如何转字典避免重复 dumps",
+      "relevant": [
+        "离线 LCEL 使用笔记 / JSON 字符串与 JSON 对象"
+      ]
+    },
+    {
+      "id": "q17",
+      "family": "api-17",
+      "split": "test",
+      "query": "为什么只 print 不 return 导致输出为 null",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 输出协议与调试打印"
+      ]
+    },
+    {
+      "id": "q18",
+      "family": "api-18",
+      "split": "test",
+      "query": "langchain_core 导入路径与 langchain 区别",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 导入路径"
+      ]
+    },
+    {
+      "id": "q19",
+      "family": "api-19",
+      "split": "test",
+      "query": "候选沙箱为什么不能使用 ChatDeepSeek 访问网络",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 禁网执行与模型客户端"
+      ]
+    },
+    {
+      "id": "q20",
+      "family": "api-20",
+      "split": "test",
+      "query": "模板变量错误和数据形状错误怎样区分",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 错误分类与验证"
+      ]
+    },
+    {
+      "id": "q21",
+      "family": "api-1",
+      "split": "dev",
+      "query": "ChatPromptTemplate 字典输入 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / ChatPromptTemplate 字典输入"
+      ]
+    },
+    {
+      "id": "q22",
+      "family": "api-3",
+      "split": "dev",
+      "query": "多消息模板 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 多消息模板"
+      ]
+    },
+    {
+      "id": "q23",
+      "family": "api-5",
+      "split": "dev",
+      "query": "LCEL 管道运算符 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / LCEL 管道运算符"
+      ]
+    },
+    {
+      "id": "q24",
+      "family": "api-8",
+      "split": "dev",
+      "query": "RunnableLambda 包装函数 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / RunnableLambda 包装函数"
+      ]
+    },
+    {
+      "id": "q25",
+      "family": "api-11",
+      "split": "test",
+      "query": "RunnableParallel 分支输入 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / RunnableParallel 分支输入"
+      ]
+    },
+    {
+      "id": "q26",
+      "family": "api-13",
+      "split": "test",
+      "query": "FakeListLLM 离线响应 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / FakeListLLM 离线响应"
+      ]
+    },
+    {
+      "id": "q27",
+      "family": "api-15",
+      "split": "test",
+      "query": "StrOutputParser 输出 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / StrOutputParser 输出"
+      ]
+    },
+    {
+      "id": "q28",
+      "family": "api-18",
+      "split": "test",
+      "query": "导入路径 使用说明和示例",
+      "relevant": [
+        "离线 LCEL 使用笔记 / 导入路径"
+      ]
+    },
+    {
+      "id": "q29",
+      "family": "outside-torch",
+      "split": "dev",
+      "query": "CUDA TensorRT 显存 LoRA 训练梯度",
+      "relevant": []
+    },
+    {
+      "id": "q30",
+      "family": "outside-sql",
+      "split": "test",
+      "query": "MySQL InnoDB 索引页分裂 redo binlog",
+      "relevant": []
+    }
+  ]
+}

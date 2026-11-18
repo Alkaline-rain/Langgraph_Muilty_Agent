@@ -1,3 +1,7 @@
+if __package__ in (None, ""):
+    from _entry import bootstrap
+    bootstrap()
+
 """不调用 LLM 的环境诊断；--probe 运行固定的容器烟雾测试。"""
 import argparse
 import importlib.metadata
@@ -5,7 +9,7 @@ import json
 import platform
 import subprocess
 
-from utils.docker_sandbox import DockerSandbox, find_docker
+from code_assistant.utils.docker_sandbox import DockerSandbox, find_docker
 
 
 def diagnose(probe=False):

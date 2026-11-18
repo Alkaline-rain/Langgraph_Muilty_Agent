@@ -1,15 +1,15 @@
 """有限预算的生成、可信验收、审查与反思节点。"""
 import json
 from pydantic import ValidationError
-from agents.coder import invoke_coder
-from agents.reviewer import invoke_reviewer
-from agents.reflector import invoke_reflector
-from schemas.models import TaskSpec, AcceptanceResult, FailureRecord
-from utils.acceptance import evaluate
-from utils.llm_runtime import call_agent
-from utils.repair_policy import clip, feedback, summary, fingerprint, code_fingerprint, strategy
-from utils.trace import record_node, record_route
-from graph.edges import termination_reason
+from code_assistant.agents.coder import invoke_coder
+from code_assistant.agents.reviewer import invoke_reviewer
+from code_assistant.agents.reflector import invoke_reflector
+from code_assistant.schemas.models import TaskSpec, AcceptanceResult, FailureRecord
+from code_assistant.utils.acceptance import evaluate
+from code_assistant.utils.llm_runtime import call_agent
+from code_assistant.utils.repair_policy import clip, feedback, summary, fingerprint, code_fingerprint, strategy
+from code_assistant.utils.trace import record_node, record_route
+from code_assistant.graph.edges import termination_reason
 
 
 def _enter(state, node, status="ok", **details):

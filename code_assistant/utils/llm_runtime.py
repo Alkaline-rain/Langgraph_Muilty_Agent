@@ -4,8 +4,8 @@ from dataclasses import dataclass, field
 import json
 import time
 
-from config import get_llm
-from utils.errors import OutputParseError, model_error_code
+from code_assistant.config import get_llm
+from code_assistant.utils.errors import OutputParseError, model_error_code
 
 
 class BudgetExceeded(Exception):

@@ -2,8 +2,8 @@
 
 from langchain_core.prompts import ChatPromptTemplate
 
-from utils.llm_runtime import structured_call
-from schemas.models import CodeSolution
+from code_assistant.utils.llm_runtime import structured_call
+from code_assistant.schemas.models import CodeSolution
 
 # Coder 专属提示词：只负责生成，不负责判断对错
 code_prompt = ChatPromptTemplate.from_messages(

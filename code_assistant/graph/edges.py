@@ -1,5 +1,5 @@
 """策略路由：客观验收、预算及重复失败控制。"""
-from graph.state import GraphState
+from code_assistant.graph.state import GraphState
 
 
 def termination_reason(state: GraphState) -> str:

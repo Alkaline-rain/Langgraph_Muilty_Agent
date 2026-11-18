@@ -2,8 +2,8 @@
 
 from langchain_core.prompts import ChatPromptTemplate
 
-from utils.llm_runtime import structured_call
-from schemas.models import ReviewResult
+from code_assistant.utils.llm_runtime import structured_call
+from code_assistant.schemas.models import ReviewResult
 
 # Reviewer 专属提示词：只挑毛病、给建议，不负责改代码
 review_prompt = ChatPromptTemplate.from_messages(

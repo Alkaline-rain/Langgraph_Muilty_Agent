@@ -1,5 +1,5 @@
 """旧入口兼容层：禁止在宿主进程内执行生成代码。"""
-from schemas.models import ExecutionResult
+from code_assistant.schemas.models import ExecutionResult
 
 
 def execute_code(imports: str, code: str, timeout: int = 10) -> ExecutionResult:

@@ -5,3 +5,11 @@ __pycache__/
 execution_trace.json
 runs/
 test_results/
+.platform/
+.platform.env
+.tmp/
+node_modules/
+frontend/dist/
+extension/dist/
+playwright-report/
+test-results/
